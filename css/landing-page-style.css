@@ -13,7 +13,7 @@ body {
 .start {
     background-color: rgb(36, 34, 34);
     width: 100%;
-    height: 150vh;
+    height: 500vh;
     color: #fff;
 }
 
@@ -43,6 +43,15 @@ header h3 {
     padding: 10px;
 }
 
+/* input */
+input{
+    padding: 5px;
+    border-radius: 20px;
+    border: 2px solid #ffc119;    
+    outline: none;
+    color: black;
+}
+
 .container {
     border: 1px solid #fff;
     height: 100%;
@@ -54,6 +63,7 @@ header h3 {
 .release {
     background-color: #ffc119;
     padding: 10px;
+    color: black;
 }
 
 .release h3 {
@@ -90,15 +100,18 @@ header h3 {
 .item img {
     width: 100%;
     height: 100%;
+    cursor: pointer;
 }
 
 .item p {
+    font-size: small;
     text-align: center;
     margin: 5px;
 }
 
 .item .name {
     color: #ffc119;
+    cursor: pointer;
 }
 
 
