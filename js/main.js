@@ -1,23 +1,21 @@
-const itemHolder = document.querySelector("")
 let counter = 20;
 
-const anime = {
-    items: {
-        img: "https://gogocdn.net/cover/kage-no-jitsuryokusha-ni-naritakute-1664388804.png",
-        title: "eminence in shadow",
-        episodes: "24"
-    }
-}
+const items = document.querySelector(".items");
 
 // fetch data
 
 fetch("json/animes.json")
     .then((response) => response.json())
     .then((myData) => {
-        console.log(myData);
+        items.innerHTML += `
+        <div class="item">
+            <img src="${myData.shows[0].img}">
+            <p class="name">${myData.shows[0].title}</p>
+            <p class="episode">${myData.shows[0].episodes}</p>
+        </div>`
     })
 
 // for loop for the cards 
-for (let index = 0; index < array.length; index++) {
+// for (let index = 0; index < array.length; index++) {
     
-}
+// }
