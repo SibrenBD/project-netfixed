@@ -21,6 +21,10 @@ body {
     text-decoration: none;
 }
 
+.item a:visited {
+    color: #ffc119;
+}
+
 .start header nav li {
     border-radius: 3px;
     display: inline-block;
