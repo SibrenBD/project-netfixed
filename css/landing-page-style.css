@@ -29,6 +29,12 @@ body {
     margin: 25px;
 }
 
+.underline {
+    text-decoration: underline 3px #ffc119;
+
+}
+
+
 header {
     font-size: large;
     padding: 1rem;
@@ -44,10 +50,10 @@ header h3 {
 }
 
 /* input */
-input{
+input {
     padding: 5px;
     border-radius: 20px;
-    border: 2px solid #ffc119;    
+    border: 2px solid #ffc119;
     outline: none;
     color: black;
 }
@@ -93,7 +99,7 @@ input{
 
 .item {
     width: 200px;
-    height: 325px;
+    height: 300px;
     border: 2px solid yellow;
     margin: 40px;
 }
@@ -114,6 +120,12 @@ input{
 .item .name {
     color: #ffc119;
     cursor: pointer;
+}
+
+/* hover */
+.start header nav li:hover {
+    text-decoration: underline 3px #ffc119;
+    color: #ffc119;
 }
 
 footer {
