@@ -9,8 +9,15 @@ const anime = {
     }
 }
 
+// fetch data
+
+fetch("json/animes.json")
+    .then((response) => response.json())
+    .then((myData) => {
+        console.log(myData);
+    })
+
 // for loop for the cards 
 for (let index = 0; index < array.length; index++) {
-    const element = array[index];
-
+    
 }
