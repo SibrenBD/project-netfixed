@@ -108,13 +108,13 @@ input {
     height: 300px;
     border: 2px solid yellow;
     margin: 40px;
-    transition: scale 3s;
+    transition: transform 0.2s;
 }
 
 /* hover */
 .item:hover {
-    transform: scale(1.1);
-
+    transform: scale(1.09);
+    cursor: pointer;
 }
 
 .item img {
