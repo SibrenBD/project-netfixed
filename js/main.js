@@ -12,8 +12,9 @@ fetch("json/animes.json")
 
             items.innerHTML += `
                 <div class="item">
+                <a href="${anime.page}">
                     <img src="${anime.img}">
-                    <p class="name">${anime.title}</p>
+                    <p class="name">${anime.title}</a></p>
                     <p class="episode">episodes: ${anime.episodes}</p>
                 </div>`;
         });
