@@ -19,6 +19,7 @@ body {
 
 .start a {
     text-decoration: none;
+    color: #ffc119;
 }
 
 .item a:visited {

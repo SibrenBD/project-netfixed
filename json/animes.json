@@ -1,26 +1,31 @@
 {
     "shows": {
         "SWORD ART ONLINE": {
+            "id": 1,
             "title": "SWORD ART ONLINE",
             "img": "https://gogocdn.net/images/anime/S/sword-art-online.jpg",
             "episodes": 25
         },
         "SWORD ART ONLINE II": {
+            "id": 2,
             "title": "SWORD ART ONLINE II",
             "img": "https://gogocdn.net/images/summer/sao_2.jpg",
             "episodes": 24
         },
         "SWORD ART ONLINE: ALICIZATION": {
+            "id": 3,
             "title": "SWORD ART ONLINE: ALICIZATION",
             "img": "https://gogocdn.net/cover/sword-art-online-alicization.png",
             "episodes": 24
         },
         "SWORD ART ONLINE: ALICIZATION - WAR OF UNDERWORLD": {
+            "id": 4,
             "title": "SWORD ART ONLINE: ALICIZATION - WAR OF UNDERWORLD",
             "img": "https://gogocdn.net/cover/sword-art-online-alicization.png",
             "episodes": 13
         },
         "UNDEAD UNLUCK": {
+            "id": 5,
             "title": "UNDEAD UNLUCK",
             "img": "https://gogocdn.net/cover/undead-unluck-1696013292.png",
             "episodes": 10,
@@ -28,6 +33,7 @@
         },
 
         "GOTOUBUN NO HANAYOME": {
+            "id": 6,
             "title": "GOTOUBUN NO HANAYOME",
             "img": "https://gogocdn.net/cover/gotoubun-no-hanayome.png",
             "episodes": 12
