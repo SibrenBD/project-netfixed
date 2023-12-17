@@ -1,14 +1,14 @@
 const items = document.querySelector(".items");
 
-// fetch data
+// fetch data animes
 fetch("json/animes.json")
     .then((response) => response.json())
     .then((myData) => {
         console.log(myData);
 
         // Loop through object properties
-        Object.keys(myData.shows).forEach((animeKey) => {
-            const anime = myData.shows[animeKey];
+        Object.keys(myData).forEach((animeKey) => {
+            const anime = myData[animeKey];
 
             items.innerHTML += `
                 <div class="item">
@@ -19,3 +19,11 @@ fetch("json/animes.json")
                 </div>`;
         });
     });
+
+// fetch data movies
+
+fetch("json/movies.json")
+    .then((response) => response.json())
+    .then((myData) => {
+        console.log(myData);
+    })
