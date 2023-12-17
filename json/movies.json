@@ -1,0 +1,9 @@
+{
+    "YOUR NAME": {
+        "id": 1,
+        "title": "YOUR NAME",
+        "img": "https://gogocdn.net/cover/kimi-no-na-wa.jpg",
+        "episodes": 25,
+        "page": "./info-pages/sao-info-page.html"
+    }
+}
