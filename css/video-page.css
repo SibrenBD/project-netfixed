@@ -93,14 +93,10 @@ header h3 {
 }
 
 .items {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: center; */
     padding: 30px;
 }
 
 footer {
-    /* text-align: center; */
     margin: 20px;
     padding: 50px;
     font-size: 12px;
@@ -114,37 +110,49 @@ footer a {
 
 /* video iframe */
 .video-main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     width: 100%;
-    height: 100%;
-    border: 3px solid black;
-    padding: 150px;
-    margin-bottom: 20px;
+    max-width: 800px; /* Set your desired max width */
+    margin: auto; 
+    padding: 20px;
 }
 
 .video {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 375px;
-    border: 3px solid black;
+    position: relative;
+    margin-top: 5px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
 }
 
 iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+}
+
+h3 {
+    margin-top: 0;
+}
+
+.btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* info-page */
 .epi-container {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: wrap;    
     position: relative;
+    margin-top: 5px;
     padding: 20px;
     width: 100%;
     height: 100%;
@@ -171,4 +179,11 @@ iframe {
 
 .episode:not(:hover) {
     animation: flash 2s;
+}
+
+@media only screen and (max-width: 1087px) {
+    .start {
+        width: 100%;
+    }
+    
 }
