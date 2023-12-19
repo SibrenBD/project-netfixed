@@ -20,7 +20,7 @@
         "title": "Weathering with You",
         "img": "https://www7.gogoanime.me/cover/tenki-no-ko.png",
         "episodes": 1,
-        "page": ""
+        "page": "./info-pages/Weathering with You.html"
     },
 
     "Sazume": {
@@ -28,7 +28,7 @@
         "title": "Sazume",
         "img": "https://www7.gogoanime.me/cover/suzume-no-tojimari-dub.png",
         "episodes": 1,
-        "page": ""
+        "page": "./info-pages/Sazume.html"
     },
 
     "A silent voice": {
