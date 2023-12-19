@@ -181,8 +181,17 @@ h3 {
     animation: flash 2s;
 }
 
-@media only screen and (max-width: 1087px) {
+@media only screen and (max-width: 650px) {
+    
     .start {
+        width: 100%;
+    }
+
+    .container {
+        width: 100%;
+    }
+
+    .video{
         width: 100%;
     }
     
