@@ -5,6 +5,11 @@ fetch("json/animes.json")
     .then((response) => response.json())
     .then((myData) => {
         console.log(myData);
+        // Search Input
+        const input = document.getElementById('keyword');
+        const searchBox = document.querySelector(".items")
+        const searchItem = document.querySelectorAll(".item")
+        const filter = document.querySelector(".name")
 
         // Loop through object properties
         Object.keys(myData).forEach((animeKey) => {
