@@ -6,7 +6,8 @@ function searchItems() {
   function searchInSection(sectionId, searchInput) {
     const items = document.getElementById(sectionId).querySelectorAll('.item');
 
-    items.forEach(item => {
+    for (let i = 0; i < items.length; i++) {
+        const item = items[i];
         const itemName = item.querySelector('.name');
         const itemNameText = itemName.textContent.toLowerCase();
 
@@ -15,14 +16,15 @@ function searchItems() {
         } else {
             if (itemNameText.includes(searchInput)) {
                 itemName.classList.add('uppercase');
-                item.style.display = ''; 
+                item.style.display = '';
             } else {
                 itemName.classList.remove('uppercase');
-                item.style.display = 'none'; 
+                item.style.display = 'none';
             }
         }
-    });
+    }
 }
+
 
   // fetch data animes
   fetch("json/animes.json")
