@@ -54,10 +54,12 @@ header {
 }
 
 header h3 {
-    color: yellow;
+    color: black;
     font-size: xx-large;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffc119;
     padding: 10px;
-}
+}   
 
 /* input */
 input {

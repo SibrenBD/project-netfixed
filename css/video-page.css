@@ -54,8 +54,10 @@ header {
 }
 
 header h3 {
-    color: yellow;
+    color: black;
     font-size: xx-large;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #ffc119;
     padding: 10px;
 }
 
@@ -136,6 +138,7 @@ iframe {
     z-index: 1; 
     overflow-clip-margin: content-box !important;
     overflow: clip !important;
+    overflow: hidden;
 }
 
 h3 {
