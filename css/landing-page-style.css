@@ -54,6 +54,10 @@ header h3 {
     padding: 10px;
 }
 
+.underline {
+    text-decoration: underline 3px #ffc119;
+}
+
 /* input */
 input {
     padding: 5px;
