@@ -177,10 +177,11 @@ footer a {
 }
 
 @media screen and (max-width: 700px) {
-    /* .fa-arrow-right-to-bracket {
+    .fa-arrow-right-to-bracket {
         position: relative;
-        top: 10px;
-    } */
+        top: 22px;
+        left: 20px;
+    }
 
     .start header nav li {
         display: none;
@@ -196,10 +197,5 @@ footer a {
         top: 22px;
         left: -10px;
     }
-
-    .fa-arrow-right-to-bracket {
-        top: 22px;
-        left: 20px;
-    }   
 }
 
