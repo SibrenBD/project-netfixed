@@ -116,6 +116,10 @@ footer a {
     margin-bottom: 20px;
 }
 
+.video-main p {
+    margin-bottom: 5px;
+}
+
 .video {
     position: relative;
     padding-bottom: 56.25%;

@@ -46,7 +46,7 @@ body {
 header {
     display: flex;
     font-size: large;
-    padding: 1rem;
+    padding: 0.5rem;
     justify-content: center;
     text-align: center;
     font-family: sans-serif;
@@ -176,7 +176,11 @@ footer a {
     cursor: pointer;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) and (min-width: 360px) {
+
+    .start {
+        width: 100%;
+    }
     .fa-arrow-right-to-bracket {
         position: relative;
         top: 22px;
