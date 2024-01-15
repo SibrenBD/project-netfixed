@@ -42,7 +42,6 @@ body {
 
 .underline {
     text-decoration: underline 3px #ffc119;
-
 }
 
 header {
@@ -54,10 +53,8 @@ header {
 }
 
 header h3 {
-    color: black;
+    color: yellow;
     font-size: xx-large;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffc119;
     padding: 10px;
 }
 
@@ -205,6 +202,10 @@ input {
     cursor: text;
 }
 
+.checkbox {
+    cursor: pointer;
+}
+
 i {
     position: relative;
     top: 1px;
@@ -221,7 +222,6 @@ i {
 }
 
 footer {
-    /* text-align: center; */
     padding: 50px;
 }
 
