@@ -1,4 +1,7 @@
     //   Login form
+
+
+
     document.addEventListener('DOMContentLoaded', function () {
         document.querySelector('.login-form').addEventListener('submit', function (event) {
             event.preventDefault();

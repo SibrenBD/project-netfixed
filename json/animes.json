@@ -1,65 +1,103 @@
 {
-    "SWORD ART ONLINE": {
+    "SWORD-ART-ONLINE": {
         "id": 1,
         "title": "SWORD ART ONLINE",
         "img": "https://gogocdn.net/images/anime/S/sword-art-online.jpg",
         "episodes": 25,
-        "page": "./info-pages/sao-info-page.html"
+        "page": "./info-pages/sao-info-page.html",
+        "url": [
+            ""
+        ]
     },
-    "SWORD ART ONLINE II": {
+    "SWORD-ART-ONLINE-II": {
         "id": 2,
         "title": "SWORD ART ONLINE II",
         "img": "https://gogocdn.net/images/summer/sao_2.jpg",
         "episodes": 24,
-        "page": "./info-pages/saoII-info-page.html"
+        "page": "./info-pages/saoII-info-page.html",
+        "url": [
+            ""
+        ]
     },
-    "SWORD ART ONLINE: ALICIZATION": {
+    "SWORD-ART-ONLINE:ALICIZATION": {
         "id": 3,
         "title": "SWORD ART ONLINE: ALICIZATION",
         "img": "https://gogocdn.net/cover/sword-art-online-alicization.png",
         "episodes": 24,
-        "page": "./info-pages/sao-alicization-page.html"
+        "page": "./info-pages/sao-alicization-page.html",
+        "url": [
+            ""
+        ]
     },
-    "SWORD ART ONLINE: ALICIZATION - WAR OF UNDERWORLD": {
+    "SWORD-ART-ONLINE:ALICIZATION-WAR-OF-UNDERWORLD": {
         "id": 4,
         "title": "SWORD ART ONLINE: ALICIZATION - WAR OF UNDERWORLD",
         "img": "https://gogocdn.net/cover/sword-art-online-alicization-war-of-underworld-dub.png",
         "episodes": 13,
-        "page": "./info-pages/sao-alicization-war-of-underworld.html"
+        "page": "info-pages/sao-alicization-war-of-underworld.html",
+        "url": [
+            ""
+        ]
     },
-    "UNDEAD UNLUCK": {
+    "UNDEAD-UNLUCK": {
         "id": 5,
         "title": "UNDEAD UNLUCK",
         "img": "https://gogocdn.net/cover/undead-unluck-1696013292.png",
         "episodes": 13,
-        "page": "./info-pages/undead unluck.html"
+        "page": "./info-pages/undead unluck.html",
+        "url": [
+            ""
+        ]
     },
-    "gotoubun no hanayome": {
+    "gotoubun-no-hanayome": {
         "id": 6,
         "title": "gotoubun no hanayome",
         "img": "https://gogocdn.net/cover/gotoubun-no-hanayome.png",
         "episodes": 12,
-        "page": "./info-pages/gotobun no hanayome.html"
+        "page": "./info-pages/gotobun no hanayome.html",
+        "url": [
+            ""
+        ]
     },
-    "Keikenzumi na Kimi to, Keiken Zero na Ore ga, Otsukiai suru Hanashi": {
+    "Keikenzumi-na-Kimi-to,-Keiken-Zero-na-Ore-ga,-Otsukiai-suru-Hanashi": {
         "id": 7,
         "title": "You Were Experienced, I Was Not: Our Dating Story",
         "img": "https://www7.gogoanime.me/cover/keikenzumi-na-kimi-to-keiken-zero-na-ore-ga-otsukiai-suru-hanashi.png",
         "episodes": 11,
-        "page": "./info-pages/You Were Experienced.html"
+        "page": "./info-pages/You Were Experienced.html",
+        "url": [
+            ""
+        ]
     },
-    "The Eminence in Shadow, Shadow Garden": {
+    "The-Eminence-in-Shadow,-Shadow-Garden": {
         "id": 8,
         "title": "The Eminence in Shadow, Shadow Garden",
         "img": "https://gogocdn.net/cover/kage-no-jitsuryokusha-ni-naritakute-1664388804.png",
         "episodes": 12,
-        "page": "./info-pages/shadowgarden-page.html"
+        "page": "./info-pages/shadowgarden-page.html",
+        "url": [
+            ""
+        ]
     },
-    "Oshi no ko": {
+    "Oshi-no-ko": {
         "id": 10,
         "title": "Oshi no ko",
         "img": "https://gogocdn.net/cover/oshi-no-ko-1680121500.png",
         "episodes": 11,
-        "page": "./info-pages/oshinoko-page.html"
+        "page": "./info-pages/oshinoko-page.html",
+        "url": [
+            "//embtaku.pro/streaming.php?id=MjAyNjQ3&title=%22Oshi+no+Ko%22+Episode+1&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjAzMDkw&title=%22Oshi+no+Ko%22+Episode+2&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjAzNDU2&title=%22Oshi+no+Ko%22+Episode+3&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjAzODc0&title=%22Oshi+no+Ko%22+Episode+4&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA0Mjc4&title=%22Oshi+no+Ko%22+Episode+5&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA0NjQ4&title=%22Oshi+no+Ko%22+Episode+6&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA0ODcx&title=%22Oshi+no+Ko%22+Episode+7&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA1MzE3&title=%22Oshi+no+Ko%22+Episode+7.5&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA1NzQ4&title=%22Oshi+no+Ko%22+Episode+8&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA2MjUy&title=%22Oshi+no+Ko%22+Episode+9&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA2NjI2&title=%22Oshi+no+Ko%22+Episode+10&typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MjA3MDc0&title=%22Oshi+no+Ko%22+Episode+11&typesub=SUB"
+        ]
     }
 }
