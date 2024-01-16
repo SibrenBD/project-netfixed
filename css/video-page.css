@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-body {
+html, body {
     background-color: black;
 }
 
@@ -59,8 +59,6 @@ header h3 {
     position: relative;
     top: 5px;
     font-size: xx-large;
-    /* -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffc119; */
     color: yellow;
     padding: 10px;
 }
@@ -98,8 +96,7 @@ main {
 }
 
 footer {
-    margin: 20px;
-    padding: 50px;
+    padding: 40px;
     font-size: 12px;
     color: #ffc119;
 }
