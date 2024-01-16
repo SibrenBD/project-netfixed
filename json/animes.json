@@ -25,7 +25,7 @@
         "title": "SWORD ART ONLINE: ALICIZATION - WAR OF UNDERWORLD",
         "img": "https://gogocdn.net/cover/sword-art-online-alicization-war-of-underworld-dub.png",
         "episodes": 13,
-        "page": "./info-pages/sao-alicization-warofunderworld.html"
+        "page": "./info-pages/sao-alicization-war-of-underworld.html"
     },
     "UNDEAD UNLUCK": {
         "id": 5,
@@ -54,13 +54,6 @@
         "img": "https://gogocdn.net/cover/kage-no-jitsuryokusha-ni-naritakute-1664388804.png",
         "episodes": 12,
         "page": "./info-pages/shadowgarden-page.html"
-    },
-    "SWORD ART ONLINE: ALICIZATION - War": {
-        "id": 9,
-        "title": "SWORD ART ONLINE: ALICIZATION - War",
-        "img": "https://gogocdn.net/cover/sword-art-online-alicization-war-of-underworld.png",
-        "episodes": 12,
-        "page": "./info-pages/sao-alicization-war-page.html"
     },
     "Oshi no ko": {
         "id": 10,

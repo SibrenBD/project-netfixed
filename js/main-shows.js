@@ -45,38 +45,6 @@ function searchItems() {
           });
       });
 
-  // fetch data movies
-  fetch("json/movies.json")
-      .then((response) => response.json())
-      .then((myData) => {
-          const movieItems = document.getElementById('movieItems');
-
-          Object.keys(myData).forEach((movieKey) => {
-              const movie = myData[movieKey];
-
-              movieItems.innerHTML += `
-                  <div class="item">
-                    <a href="${movie.page}">
-                      <img src="${movie.img}" alt="${movie.title}">
-                      <p class="name">${movie.title}</a></p>
-                      <!-- Adjust the content based on your movie data structure -->
-                  </div>`;
-          });
-      });
-
-    //   Login form
-      document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('.login-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            
-            let username = document.querySelector('.login-form input[type="text"]').value;
-            let password = document.querySelector('.login-form input[type="password"]').value;
-    
-            if (username === 'Admin' && password === 'Admin') {
-                alert("Welcome Admin");
-                window.location.href = 'landing-page.html';
-            } else {
-                alert('Invalid username or password');
-            }
-        });
-    });
+      fetch("")
+  .then((response) => response.json())
+  .then((animelist) => console.log(animelist));
