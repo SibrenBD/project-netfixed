@@ -45,6 +45,39 @@ function searchItems() {
           });
       });
 
+    //   login authenticator
+    let config = document.querySelector(".configuration")
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelector('.login-form').addEventListener('submit', function (event) {
+            event.preventDefault();
+            
+            let username = document.querySelector('.login-form input[type="text"]').value;
+            let password = document.querySelector('.login-form input[type="password"]').value;
+    
+            if (username === 'Admin' && password === 'Admin') {
+                config.textContent = "Loged in";
+                setInterval(function() {
+                    executed = true;
+                   off()
+                   return; 
+                }, 2000)
+            } else {
+                config.textContent = "Invalid username or password";
+            }
+        });
+    });
+
+    //   Login Display pop up
+
+    function on() {
+        document.querySelector(".overlay").style.display = "block";
+      }
+      
+      function off() {
+        document.querySelector(".overlay").style.display = "none";
+      }
+
+// fetch
       fetch("")
   .then((response) => response.json())
   .then((animelist) => console.log(animelist));

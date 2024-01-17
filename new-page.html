@@ -33,11 +33,10 @@
                     </a>
                     <input placeholder="search" name="keyword" id="keyword" type="text" value="" autocomplete="off"
                         oninput="searchItems()" maxlength="16"><i class="fa fa-search"></i>
-                        <a href="login-page.html">
-                            <i class="fa-solid fa-arrow-right-to-bracket"></i>
-                        </a>
-                        <!-- menu bar mobile support -->
-                        <!-- <i class="fa-solid fa-bars"></i> -->
+                    <i class="fa-solid fa-arrow-right-to-bracket" onclick="on()"></i>
+
+                    <!-- menu bar mobile support -->
+                    <!-- <i class="fa-solid fa-bars"></i> -->
                 </ul>
             </nav>
 
@@ -52,19 +51,50 @@
                 <div class="items">
                     <div class="item">
                         <a href="">
-                        <img src="https://gogocdn.net/cover/nanatsu-no-taizai-mokushiroku-no-yonkishi-1696010923.png">
-                        <p class="name">NANATSU NO TAIZAI: MOKUSHIROKU NO YONKISHI</p>
-                        <p class="episode">episodes: 9</p>
+                            <img
+                                src="https://gogocdn.net/cover/nanatsu-no-taizai-mokushiroku-no-yonkishi-1696010923.png">
+                            <p class="name">NANATSU NO TAIZAI: MOKUSHIROKU NO YONKISHI</p>
+                            <p class="episode">episodes: 9</p>
                     </div>
 
                 </div>
             </div>
         </main>
         <footer>
-            <p><a href="">About us</a> | <a href=""> Contact us</a> | <a href="">Privacy</a> | <a href="landing-page.html">Netfixed</a></p>
+            <p><a href="">About us</a> | <a href=""> Contact us</a> | <a href="">Privacy</a> | <a
+                    href="landing-page.html">Netfixed</a></p>
         </footer>
-        
+        <section class="overlay">
+            <div class="content">
+                <div class="form-box">
+                    <div class="form-value">
+                        <form class="login-form" method="get">
+                            <h2>Login</h2><i class="fa-solid fa-xmark" onclick="off()"></i>
+                            <div class="inputbox">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type="text" required>
+                                <label for="">Username</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input type="password" id="password" required>
+                                <label for="">Password</label>
+                            </div>
+                            <!--LABEL REPLACEMENT/FORGETPASSWORD/NAAR_Register-->
+                            <div class="forget">
+                                <label for="Remember"><input type="checkbox" checked>Remember Me </label>
+                            </div>
+                            <button type="submit" class="configuration">Log in</button>
+                            <div class="register">
+                                <p>Don't have an account: <a href="#">Register</a></p><br><a href="#">Forget
+                                    Password</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
     </div>
+    <script src="/js/main-shows.js"></script>
     <script src="https://kit.fontawesome.com/6be629f03b.js" crossorigin="anonymous"></script>
 </body>
 
