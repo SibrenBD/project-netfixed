@@ -1,0 +1,47 @@
+{
+    "solo-leveling": {
+        "id": 1,
+        "dubtitle": "Sololeveling",
+        "subtitle": "Ore dake Level Up na Ken",
+        "img": "https://m.media-amazon.com/images/M/MV5BODJkZTM3MWYtOTkxNS00YWUxLTg5NjAtOTk4ZWM5MTBmMzAyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "episodes": 2,
+        "page": "#",
+        "subUrl": [
+            "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB"
+        ],
+        "dubUrl": [
+            ""
+        ]
+    }, 
+    "NANATSU NO TAIZAI: MOKUSHIROKU NO YONKISHI": {
+        "id": 2,
+        "dubtitle": "Four Knights Of Apocalypse",
+        "subtitle": "NANATSU NO TAIZAI: MOKUSHIROKU NO YONKISHI",
+        "img": "https://gogocdn.net/cover/nanatsu-no-taizai-mokushiroku-no-yonkishi-1696010923.png",
+        "episodes": 9,
+        "page": "#",
+        "subUrl": [
+            "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB"
+        ],
+        "dubUrl": [
+            ""
+        ]
+    },
+    "Jujutsu Kaisen 2nd Season": {
+        "id": 2,
+        "dubtitle": "Jujutsu Kaisen 2nd Season",
+        "subtitle": "",
+        "img": "https://m.media-amazon.com/images/I/71mqttVzH-L._AC_UF894,1000_QL80_.jpg",
+        "episodes": 23,
+        "page": "#",
+        "subUrl": [
+            "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB"
+        ],
+        "dubUrl": [
+            ""
+        ]
+    }
+}
