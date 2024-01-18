@@ -154,15 +154,21 @@ input {
     cursor: pointer;
 }
 
+/* change margin on or off  */
 .item p {
+    position: relative;
     font-size: small;
     text-align: center;
-    margin: 5px;
 }
 
 .item .name {
+    top: 2px;
     color: #ffc119;
     cursor: pointer;
+}
+
+.item .episode {
+    top: 3px;
 }
 
 footer {

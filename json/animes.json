@@ -1,91 +1,236 @@
 {
     "SWORD-ART-ONLINE": {
         "id": 1,
-        "title": "SWORD ART ONLINE",
+        "dubtitle": "SWORD ART ONLINE",
+        "subtitle": "Hepburn: Sōdo Āto Onrain",
         "img": "https://gogocdn.net/images/anime/S/sword-art-online.jpg",
         "episodes": 25,
         "page": "./info-pages/sao-info-page.html",
-        "url": [
+        "subUrl": [
+            "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDc=&amp;title=Sword+Art+Online+Episode+3&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDk=&amp;title=Sword+Art+Online+Episode+4&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNzU=&amp;title=Sword+Art+Online+Episode+5&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTA=&amp;title=Sword+Art+Online+Episode+6&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTE=&amp;title=Sword+Art+Online+Episode+7&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTI=&amp;title=Sword+Art+Online+Episode+8&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTM=&amp;title=Sword+Art+Online+Episode+9&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTQ=&amp;title=Sword+Art+Online+Episode+10&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTU=&amp;title=Sword+Art+Online+Episode+11&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTY=&amp;title=Sword+Art+Online+Episode+12&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTc=&amp;title=Sword+Art+Online+Episode+13&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTg=&amp;title=Sword+Art+Online+Episode+14&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNTk=&amp;title=Sword+Art+Online+Episode+15&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjE=&amp;title=Sword+Art+Online+Episode+16&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjI=&amp;title=Sword+Art+Online+Episode+17&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNzQ=&amp;title=Sword+Art+Online+Episode+18&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjM=&amp;title=Sword+Art+Online+Episode+19&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjQ=&amp;title=Sword+Art+Online+Episode+20&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjU=&amp;title=Sword+Art+Online+Episode+21&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjY=&amp;title=Sword+Art+Online+Episode+22&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjc=&amp;title=Sword+Art+Online+Episode+23&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjg=&amp;title=Sword+Art+Online+Episode+24&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNjk=&amp;title=Sword+Art+Online+Episode+25&amp;typesub=SUB"
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "SWORD-ART-ONLINE-II": {
         "id": 2,
-        "title": "SWORD ART ONLINE II",
+        "dubtitle": "SWORD ART ONLINE II",
+        "subtitle": "Hepburn: Sōdo Āto Onrain II",
         "img": "https://gogocdn.net/images/summer/sao_2.jpg",
         "episodes": 24,
         "page": "./info-pages/saoII-info-page.html",
-        "url": [
+        "subUrl": [
+            "//goone.pro/streaming.php?id=NDQ4MzY=&amp;title=Sword+Art+Online+II+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDQ5MTI=&amp;title=Sword+Art+Online+II+Episode+2&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDUwMzI=&amp;title=Sword+Art+Online+II+Episode+3&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDUxMjk=&amp;title=Sword+Art+Online+II+Episode+4&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDUyMjA=&amp;title=Sword+Art+Online+II+Episode+5&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDUzNjM=&amp;title=Sword+Art+Online+II+Episode+6&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDU2NTQ=&amp;title=Sword+Art+Online+II+Episode+7&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDU4Nzk=&amp;title=Sword+Art+Online+II+Episode+8&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDYwMDQ=&amp;title=Sword+Art+Online+II+Episode+9&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDYxMTg=&amp;title=Sword+Art+Online+II+Episode+10&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDY0NTg=&amp;title=Sword+Art+Online+II+Episode+11&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDcwMDU=&amp;title=Sword+Art+Online+II+Episode+12&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDc2MTQ=&amp;title=Sword+Art+Online+II+Episode+13&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDc3NTQ=&amp;title=Sword+Art+Online+II+Episode+14&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDc4ODY=&amp;title=Sword+Art+Online+II+Episode+15&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDgyNjk=&amp;title=Sword+Art+Online+II+Episode+16&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDgzNjQ=&amp;title=Sword+Art+Online+II+Episode+17&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDg0ODc=&amp;title=Sword+Art+Online+II+Episode+18&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDg1Njg=&amp;title=Sword+Art+Online+II+Episode+19&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDg2NjE=&amp;title=Sword+Art+Online+II+Episode+20&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDg3NzI=&amp;title=Sword+Art+Online+II+Episode+21&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDg4NzE=&amp;title=Sword+Art+Online+II+Episode+22&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDg5Njc=&amp;title=Sword+Art+Online+II+Episode+23&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=NDkwNTc=&amp;title=Sword+Art+Online+II+Episode+24&amp;typesub=SUB"
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "SWORD-ART-ONLINE:ALICIZATION": {
         "id": 3,
-        "title": "SWORD ART ONLINE: ALICIZATION",
+        "dubtitle": "SWORD ART ONLINE: ALICIZATION",
+        "subtitle": "Sōdoāto onrain arishizēshon",
         "img": "https://gogocdn.net/cover/sword-art-online-alicization.png",
         "episodes": 24,
         "page": "./info-pages/sao-alicization-page.html",
-        "url": [
+        "subUrl": [
+            "//embtaku.pro/streaming.php?id=MTEwNDUz&amp;title=Sword+Art+Online%3A+Alicization+Episode+1&amp;typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEwNTcy&amp;title=Sword+Art+Online%3A+Alicization+Episode+2&amp;typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEwNjgy&title=Sword+Art+Online%3A+Alicization+Episode+3&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEwODI4&title=Sword+Art+Online%3A+Alicization+Episode+4&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEwOTUw&title=Sword+Art+Online%3A+Alicization+Episode+5&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTExMDcz&title=Sword+Art+Online%3A+Alicization+Episode+6&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTExMTkw&title=Sword+Art+Online%3A+Alicization+Episode+7&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTExMjg2&title=Sword+Art+Online%3A+Alicization+Episode+8&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTExMzky&title=Sword+Art+Online%3A+Alicization+Episode+9&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTExNTAx&title=Sword+Art+Online%3A+Alicization+Episode+10&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTExNjY0&title=Sword+Art+Online%3A+Alicization+Episode+11&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTExOTk3&title=Sword+Art+Online%3A+Alicization+Episode+12&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEyMjc4&title=Sword+Art+Online%3A+Alicization+Episode+13&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEyNDcz&title=Sword+Art+Online%3A+Alicization+Episode+14&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEyNjI3&title=Sword+Art+Online%3A+Alicization+Episode+15&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEyODkx&title=Sword+Art+Online%3A+Alicization+Episode+16&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEzMTYy&title=Sword+Art+Online%3A+Alicization+Episode+17&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEzMzI3&title=Sword+Art+Online%3A+Alicization+Episode+18&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTEzOTY0&title=Sword+Art+Online%3A+Alicization+Episode+19&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTE0NTEz&title=Sword+Art+Online%3A+Alicization+Episode+20&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTE0OTk2&title=Sword+Art+Online%3A+Alicization+Episode+21&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTE1MzQy&title=Sword+Art+Online%3A+Alicization+Episode+22&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTE1Nzk1&title=Sword+Art+Online%3A+Alicization+Episode+23&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTE2MTgy&title=Sword+Art+Online%3A+Alicization+Episode+24&typesub=SUB"
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "SWORD-ART-ONLINE:ALICIZATION-WAR-OF-UNDERWORLD": {
         "id": 4,
-        "title": "SWORD ART ONLINE: ALICIZATION - WAR OF UNDERWORLD",
+        "dubtitle": "SWORD ART ONLINE: ALICIZATION WAR OF UNDERWORLD",
+        "subtitle": "Sōdoāto onrain arishizēshon u~ō of andāwārudo",
         "img": "https://gogocdn.net/cover/sword-art-online-alicization-war-of-underworld-dub.png",
         "episodes": 13,
         "page": "info-pages/sao-alicization-war-of-underworld.html",
-        "url": [
+        "subUrl": [
+            "//embtaku.pro/streaming.php?id=MTMwNzMz&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+0&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTMxNDM3&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+1&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTMyMDIz&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+2&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTMyNDQx&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+3&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTMyOTAx&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+4&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTMzNDQ5&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+5&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTMzOTE1&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+6&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTM0MjIx&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+7&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTM0NDMy&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+8&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTM0NjMw&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+9&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTM0Nzky&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+10&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTM0OTg3&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+11&typesub=SUB",
+                "//embtaku.pro/streaming.php?id=MTM1MjE3&title=Sword+Art+Online%3A+Alicization+-+War+of+Underworld+Episode+12&typesub=SUB"
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "UNDEAD-UNLUCK": {
         "id": 5,
-        "title": "UNDEAD UNLUCK",
+        "dubtitle": "UNDEAD UNLUCK",
+        "subtitle": "Sōdoāto onrain arishizēshon u~ō of andāwārudo",
         "img": "https://gogocdn.net/cover/undead-unluck-1696013292.png",
         "episodes": 13,
         "page": "./info-pages/undead unluck.html",
-        "url": [
+        "subUrl": [
+            ""
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "gotoubun-no-hanayome": {
         "id": 6,
-        "title": "gotoubun no hanayome",
+        "dubtitle": "gotoubun no hanayome",
+        "subtitle": "Sōdoāto onrain arishizēshon u~ō of andāwārudo",
         "img": "https://gogocdn.net/cover/gotoubun-no-hanayome.png",
         "episodes": 12,
         "page": "./info-pages/gotobun no hanayome.html",
-        "url": [
+        "subUrl": [
+            "//embtaku.pro/streaming.php?id=MTEyNDQ0&amp;title=Gotoubun+no+Hanayome+Episode+1&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTEyNTkx&amp;title=Gotoubun+no+Hanayome+Episode+2&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTEyODI4&amp;title=Gotoubun+no+Hanayome+Episode+3&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTEzMDcz&amp;title=Gotoubun+no+Hanayome+Episode+4&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTEzMjY5&amp;title=Gotoubun+no+Hanayome+Episode+5&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTEzNTIw&amp;title=Gotoubun+no+Hanayome+Episode+6&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTEzODg1&amp;title=Gotoubun+no+Hanayome+Episode+7&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTE0MTU3&amp;title=Gotoubun+no+Hanayome+Episode+8&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTE0ODEz&amp;title=Gotoubun+no+Hanayome+Episode+9&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTE1MjEw&amp;title=Gotoubun+no+Hanayome+Episode+10&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTE1NzA1&amp;title=Gotoubun+no+Hanayome+Episode+11&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTE2MDIz&amp;title=Gotoubun+no+Hanayome+Episode+12&amp;typesub=SUB"
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "Keikenzumi-na-Kimi-to,-Keiken-Zero-na-Ore-ga,-Otsukiai-suru-Hanashi": {
         "id": 7,
-        "title": "You Were Experienced, I Was Not: Our Dating Story",
+        "dubtitle": "You Were Experienced, I Was Not: Our Dating Story",
+        "subtitle": "Keikenzumi-na-Kimi-to,-Keiken-Zero-na-Ore-ga,-Otsukiai-suru-Hanashi",
         "img": "https://www7.gogoanime.me/cover/keikenzumi-na-kimi-to-keiken-zero-na-ore-ga-otsukiai-suru-hanashi.png",
         "episodes": 11,
         "page": "./info-pages/You Were Experienced.html",
-        "url": [
+        "subUrl": [
+            ""
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "The-Eminence-in-Shadow,-Shadow-Garden": {
         "id": 8,
-        "title": "The Eminence in Shadow, Shadow Garden",
+        "dubtitle": "The Eminence in Shadow, Shadow Garden",
+        "subtitle": "Sōdoāto onrain arishizēshon u~ō of andāwārudo",
         "img": "https://gogocdn.net/cover/kage-no-jitsuryokusha-ni-naritakute-1664388804.png",
         "episodes": 12,
         "page": "./info-pages/shadowgarden-page.html",
-        "url": [
+        "subUrl": [
+            "//embtaku.pro/streaming.php?id=MTkzMjg0&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+1&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTkzNTg5&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+2&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTkzODc4&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+3&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk0MTcx&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+4&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk0NDg4&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+5&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk0ODE4&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+6&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk1MDQ1&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+7&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk1MzEy&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+8&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk1NjEw&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+9&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk1OTAz&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+10&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk2MTYz&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+11&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk2NTc2&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+12&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk2OTI0&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+13&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk3MTgx&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+14&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk3NTM4&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+15&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk3NzY1&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+16&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk4MDc2&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+17&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk4NDQ3&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+18&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk4Nzk0&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+19&amp;typesub=SUB",
+            "//embtaku.pro/streaming.php?id=MTk5MjI2&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+20&amp;typesub=SUB"
+        ],
+        "dubUrl": [
             ""
         ]
     },
     "Oshi-no-ko": {
         "id": 10,
-        "title": "Oshi no ko",
+        "dubtitle": "Oshi no ko",
+        "subtitle": "Oshi no ko",
         "img": "https://gogocdn.net/cover/oshi-no-ko-1680121500.png",
         "episodes": 11,
         "page": "./info-pages/oshinoko-page.html",
-        "url": [
+        "subUrl": [
             "//embtaku.pro/streaming.php?id=MjAyNjQ3&title=%22Oshi+no+Ko%22+Episode+1&typesub=SUB",
             "//embtaku.pro/streaming.php?id=MjAzMDkw&title=%22Oshi+no+Ko%22+Episode+2&typesub=SUB",
             "//embtaku.pro/streaming.php?id=MjAzNDU2&title=%22Oshi+no+Ko%22+Episode+3&typesub=SUB",
@@ -98,6 +243,9 @@
             "//embtaku.pro/streaming.php?id=MjA2MjUy&title=%22Oshi+no+Ko%22+Episode+9&typesub=SUB",
             "//embtaku.pro/streaming.php?id=MjA2NjI2&title=%22Oshi+no+Ko%22+Episode+10&typesub=SUB",
             "//embtaku.pro/streaming.php?id=MjA3MDc0&title=%22Oshi+no+Ko%22+Episode+11&typesub=SUB"
+        ],
+        "dubUrl": [
+            ""
         ]
     }
 }

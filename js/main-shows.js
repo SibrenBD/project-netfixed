@@ -39,7 +39,7 @@ function searchItems() {
                   <div class="item">
                     <a href="${anime.page}">
                       <img src="${anime.img}" alt="${anime.title}">
-                      <p class="name">${anime.title}</a></p>
+                      <p class="name">${anime.dubtitle}</p></a>
                       <p class="episode">episodes: ${anime.episodes}</p>
                   </div>`;
           });
