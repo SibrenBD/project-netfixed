@@ -46,11 +46,11 @@
     "A-silent-voice": {
         "id": 5,
         "title": "A silent voice",
-        "img": "https://gogocdn.net/cover/koe-no-katachi-movie.png",
+        "img": "https://ae01.alicdn.com/kf/S94ed6f8384ef41988a709595ef9e1322s.jpg_640x640Q90.jpg_.webp",
         "episodes": 1,
-        "page": "",
+        "page": "./info-pages/A silent voice.html",
         "url": [
-            ""
+            "//embtaku.pro/streaming.php?id=MTczMzc1&title=Kimi+wa+Kanata+Episode+1&typesub=SUB"
         ]
     }
 } 
