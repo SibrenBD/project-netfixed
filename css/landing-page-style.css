@@ -69,6 +69,7 @@ header h3 {
 /* input */
 input {
     position: relative;
+    top: 20px;
     padding: 5px;
     border-radius: 20px;
     border: 2px solid #ffc119;
@@ -79,22 +80,22 @@ input {
 
 .fa-search {
     position: relative;
-    top: 2px;
+    top: 22px;
     right: 30px;
     color: black;
 }
 
 .fa-arrow-right-to-bracket {
     position: relative;
-    top: 2px;
+    top: 22px;
     cursor: pointer;
     color: #ffc119;
 }
 
-.fa-bars {
+/* .fa-bars {
     position: relative;
     top: 22px;
-}
+} */
 
 .container {
     border: 1px solid #fff;
