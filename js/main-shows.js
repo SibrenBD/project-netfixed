@@ -25,25 +25,51 @@ function searchItems() {
     }
 }
 
+const dub = document.querySelector(".dub");
+const sub = document.querySelector(".sub");
 
-  // fetch data animes
-  fetch("json/animes.json")
-      .then((response) => response.json())
-      .then((myData) => {
-          const animeItems = document.getElementById('animeItems');
+// fetch data animes
+fetch("json/animes.json")
+  .then((response) => response.json())
+  .then((myData) => {
+    const animeItems = document.getElementById('animeItems');
 
-          Object.keys(myData).forEach((animeKey) => {
-              const anime = myData[animeKey];
+    // Function to render anime items based on type (sub or dub)
+    function renderAnimeItems(animeType) {
+      // Clear existing items
+      animeItems.innerHTML = "";
 
-              animeItems.innerHTML += `
-                  <div class="item">
-                    <a href="${anime.page}">
-                      <img src="${anime.img}" alt="${anime.title}">
-                      <p class="name">${anime.dubtitle}</p></a>
-                      <p class="episode">episodes: ${anime.episodes}</p>
-                  </div>`;
-          });
+      // Render items based on the selected type
+      Object.keys(myData).forEach((animeKey) => {
+        const anime = myData[animeKey];
+        const title = animeType === 'sub' ? anime.subtitle : anime.dubtitle;
+
+        if (title) {
+          animeItems.innerHTML += `
+            <div class="item">
+              <a href="${anime.page}">
+                <img src="${anime.img}" alt="${anime.title}">
+                <p class="name">${title}</p></a>
+                <p class="episode">episodes: ${anime.episodes}</p>
+            </div>`;
+        }
       });
+    }
+
+    // Initial rendering (both dub and sub)
+    renderAnimeItems('sub');
+
+    // Event listener for sub button
+    sub.addEventListener("click", function() {
+      renderAnimeItems('sub');
+    });
+
+    // Event listener for dub button
+    dub.addEventListener("click", function() {
+      renderAnimeItems('dub');
+    });
+  });
+
 
     //   login authenticator
     let config = document.querySelector(".configuration")
