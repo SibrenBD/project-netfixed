@@ -37,25 +37,26 @@ fetch("json/animes.json")
     });
 
 // fetch data movies
-
 fetch("json/movies.json")
     .then((response) => response.json())
     .then((myData) => {
         console.log(myData);
 
-        // Loop through object properties
-        Object.keys(myData).forEach((movieKey) => {
+        const keys = Object.keys(myData);
+
+        for (let i = 0; i < keys.length; i++) {
+            const movieKey = keys[i];
             const movie = myData[movieKey];
 
             items.innerHTML += `
                 <div class="item">
-                <a href="${movie.page}">
-                    <img src="${movie.img}">
-                    <p class="name">${movie.title}</a></p>
-                    <p class="episode">episodes: ${movie.episodes}</p>
-                </div>`;
-        });
-    })
+                    <a href="${movie.page}">
+                        <img src="${movie.img}">
+                        <p class="name">${movie.title}</a></p>
+                        <p class="episode">episodes: ${movie.episodes}</p>
+                    </div>`;
+        }
+    });
 
     //   login authenticator
     let config = document.querySelector(".configuration")
@@ -78,7 +79,6 @@ fetch("json/movies.json")
     });
 
     // login form
-    
     function on() {
         document.querySelector(".overlay").style.display = "block";
       }

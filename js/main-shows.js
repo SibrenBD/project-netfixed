@@ -25,50 +25,27 @@ function searchItems() {
     }
 }
 
-const dub = document.querySelector(".dub");
-const sub = document.querySelector(".sub");
-
 // fetch data animes
 fetch("json/animes.json")
-  .then((response) => response.json())
-  .then((myData) => {
-    const animeItems = document.getElementById('animeItems');
+    .then((response) => response.json())
+    .then((myData) => {
+        console.log(myData);
+        const animeItems = document.getElementById('animeItems');
+        
+        // Loop through object properties
+        Object.keys(myData).forEach((animeKey) => {
+            const anime = myData[animeKey];
 
-    // Function to render anime items based on type (sub or dub)
-    function renderAnimeItems(animeType) {
-      // Clear existing items
-      animeItems.innerHTML = "";
-
-      // Render items based on the selected type
-      Object.keys(myData).forEach((animeKey) => {
-        const anime = myData[animeKey];
-        const title = animeType === 'sub' ? anime.subtitle : anime.dubtitle;
-
-        if (title) {
-          animeItems.innerHTML += `
+            animeItems.innerHTML += `
             <div class="item">
-              <a href="${anime.page}">
-                <img src="${anime.img}" alt="${anime.title}">
-                <p class="name">${title}</p></a>
-                <p class="episode">episodes: ${anime.episodes}</p>
+                <a href="${anime.page}">
+                    <img src="${anime.img}">
+                    <p class="name">${anime.dubtitle}</p>
+                    <p class="episode">episodes: ${anime.episodes}</p>
+                </a>
             </div>`;
-        }
-      });
-    }
-
-    // Initial rendering (both dub and sub)
-    renderAnimeItems('sub');
-
-    // Event listener for sub button
-    sub.addEventListener("click", function() {
-      renderAnimeItems('sub');
+        });
     });
-
-    // Event listener for dub button
-    dub.addEventListener("click", function() {
-      renderAnimeItems('dub');
-    });
-  });
 
 
     //   login authenticator
