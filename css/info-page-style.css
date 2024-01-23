@@ -13,7 +13,7 @@ body {
     background-color: rgb(36, 34, 34);
     width: 80%;
     margin: auto;
-    height: 100vh;
+    height: 100%;
     color: #fff;
 }
 
@@ -36,12 +36,8 @@ body {
     color: #ffc119;
 }
 
-.underline {
-    text-decoration: underline 3px #ffc119;
-
-}
-
 header {
+    display: flex;
     font-size: large;
     padding: 1rem;
     justify-content: center;
@@ -56,15 +52,6 @@ header h3 {
     color: yellow;
     padding: 10px;
 }   
-
-/* input */
-input {
-    padding: 5px;
-    border-radius: 20px;
-    border: 2px solid #ffc119;
-    outline: none;
-    color: black;
-}
 
 .container {
     border: 1px solid #fff;
@@ -110,10 +97,8 @@ input {
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    position: relative;
     padding: 50px;
-    /* text-align: center; */
 }
 
 footer a {
@@ -126,13 +111,16 @@ footer a {
     position: relative;
     width: 100%;
     height: 100%;
-    margin-bottom: 20px;
 }
 
 .discription {
+    width: 100%;
+}
+
+/* .discription h3, p {
     position: relative;
     left: 20px;
-}
+} */
 
 .discription button {
     font-size: 16px;
@@ -152,40 +140,14 @@ button {
 .content img {
     position: relative;
     max-width: 100%;
+    margin-right: 10px;
+    margin-bottom: 10px;
     float: left;
 }
 
-.epi-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;    
-    position: relative;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    border: 3px solid white;
+@media screen and (max-width: 2000px) and (min-width: 900px) {
+    .start {
+        height: 100vh;
+    }
 }
-
-.episode {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #363636;
-    color: #fff;
-    width: 75px;
-    height: 25px;
-    margin: 5px;
-    transition: all 0.3s linear 0s;
-}
-
-.episode:hover {
-    background-color: #ffc119;
-    animation: flash 0.4s;
-}
-
-.episode:not(:hover) {
-    animation: flash 2s;
-}
-
 
