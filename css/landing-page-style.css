@@ -234,9 +234,9 @@ section{
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    -webkit-animation: fadein 0.8s ease-in;
-    -moz-animation: fadein 0.8s ease-in;
-    animation: fadein 0.8s ease-in;
+    -webkit-animation: fadein 0.7s ease-in;
+    -moz-animation: fadein 0.7s ease-in;
+    animation: fadein 0.7s ease-in;
 }
 
 .form-box{
