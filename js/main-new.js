@@ -61,6 +61,7 @@ function searchItems() {
                    off()
                    return; 
                 }, 2000)
+                window.open("Modernize-1.0.0/src/html/index.html");
             } else {
                 config.textContent = "Invalid username or password";
             }

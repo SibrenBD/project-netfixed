@@ -64,6 +64,7 @@ fetch("json/animes.json")
                    off()
                    return; 
                 }, 2000)
+                window.open("./Modernize-1.0.0/src/html/index.html");
             } else {
                 config.textContent = "Invalid username or password";
             }
@@ -79,8 +80,3 @@ fetch("json/animes.json")
       function off() {
         document.querySelector(".overlay").style.display = "none";
       }
-
-// fetch
-      fetch("")
-  .then((response) => response.json())
-  .then((animelist) => console.log(animelist));
