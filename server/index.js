@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import express from 'express';
 import * as fs from "node:fs";
 import cors from 'cors';
@@ -34,3 +35,5 @@ app.get('/new', (req, res) => {
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 });
+=======
+>>>>>>> parent of 625e81d (server setup completed)
