@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="image/x-icon" href="/logo/logo.png">
+    <link rel="stylesheet" href="./css/landing-page-style.css">
+    <title>Netfixed</title>
+</head>
+
+<body>
+    <div class="start">
+        <header>
+            <h3>Netfixed</h3>
+
+
+            <nav>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="movies-page.html">
+                        <li>Movies</li>
+                    </a>
+                    <a href="new-page.html">
+                        <li class="underline">New</li>
+                    </a>
+
+                    <input placeholder="search" name="keyword" id="keyword" type="text" value="" autocomplete="off"
+                        oninput="searchItems()" maxlength="16"><i class="fa fa-search"></i>
+                    <i class="fa-solid fa-arrow-right-to-bracket" onclick="on()"></i>
+
+                    <!-- menu bar mobile support -->
+                    <!-- <i class="fa-solid fa-bars"></i> -->
+                </ul>
+            </nav>
+
+        </header>
+        <main>
+            <div class="container">
+                <div class="release">
+                    <h3>Recent release</h3>
+                    |<h3> DUB</h3>
+                    |<h3> SUB</h3>
+                </div>
+                <div class="items" id="animeItems">
+                
+            </div>
+        </main>
+        <footer>
+            <p><a href="">About us</a> | <a href=""> Contact us</a> | <a href="">Privacy</a> | <a
+                    href="index.html">Netfixed</a></p>
+        </footer>
+        <section class="overlay">
+            <div class="content">
+                <div class="form-box">
+                    <div class="form-value">
+                        <form class="login-form" method="get">
+                            <h2>Login</h2><i class="fa-solid fa-xmark" onclick="off()"></i>
+                            <div class="inputbox">
+                                <ion-icon name="mail-outline"></ion-icon>
+                                <input type="text" required>
+                                <label for="">Username</label>
+                            </div>
+                            <div class="inputbox">
+                                <ion-icon name="lock-closed-outline"></ion-icon>
+                                <input type="password" id="password" required>
+                                <label for="">Password</label>
+                            </div>
+                            <!--LABEL REPLACEMENT/FORGETPASSWORD/NAAR_Register-->
+                            <div class="forget">
+                                <label for="Remember"><input type="checkbox" checked>Remember Me </label>
+                            </div>
+                            <button type="submit" class="configuration">Log in</button>
+                            <div class="register">
+                                <p>Don't have an account: <a href="#">Register</a></p><br><a href="#">Forget
+                                    Password</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+        </section>
+    </div>
+    <script src="./js/main-new.js"></script>
+    <script src="https://kit.fontawesome.com/6be629f03b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
