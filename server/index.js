@@ -1,14 +1,17 @@
 
 import express from 'express';
-import * as fs from "node:fs";
+import path from 'path';
+import fs from 'fs';
 import cors from 'cors';
 
 const app = express();
 const port = 3000;
 
+app.use(express.static('public'));
 app.use(cors());
+
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
 app.get('/animes', (req, res) => {
@@ -32,7 +35,11 @@ app.get('/new', (req, res) => {
     });
 });
 
-app.listen(port, () => {
+// Configure server to listen on all available network interfaces
+app.listen(port, '0.0.0.0', () => {
     console.log(`Example app listening on port ${port}`);
 });
 
+// app.listen(port, () => {
+//     console.log(`Example app listening on port ${port}`);
+// });
