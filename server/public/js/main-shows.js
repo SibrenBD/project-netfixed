@@ -8,13 +8,28 @@ function plusSlides(n) {
 
 function showSlides(n) {
   let i;
-  const slides = document.getElementsByClassName("slide");
+  const slides = document.querySelectorAll(".slide");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
       slides[i].style.display = "none";
   }
   slides[slideIndex-1].style.display = "block";
+}
+
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.querySelectorAll(".slide");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 
 function searchItems() {
@@ -56,7 +71,7 @@ fetch("json/animes.json")
             const anime = myData[animeKey];
 
             animeItems.innerHTML += `
-            <div class="item">
+            <div class="item" id="${anime.id}">
                 <a href="${anime.page}">
                     <img src="${anime.img}">
                     <p class="name">${anime.dubtitle}</p>
