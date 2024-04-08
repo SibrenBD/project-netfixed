@@ -28,11 +28,11 @@
                         <li>New</li>
                     </a>
                     <li onclick="on()">login</li>
-                    
+
                     <input placeholder="search" name="keyword" id="keyword" type="text" value="" autocomplete="off"
                         oninput="searchItems()" maxlength="16">
-                        
-                        <i class="fa fa-search"></i>
+
+                    <i class="fa fa-search"></i>
                     <i class="fa-solid fa-arrow-right-to-bracket" onclick="on()"></i>
 
                     <!-- menu bar mobile support -->
@@ -42,6 +42,28 @@
         </header>
 
         <main>
+            
+                <div class="slideshow-container">
+                    <div class="slides">
+                        <div class="slide">
+                            <h3>Recommondations</h3>
+                            <img src="https://m.media-amazon.com/images/I/51ND92LT0IL._AC_UF894,1000_QL80_.jpg" alt="">
+                            <div class="front">
+                                logo <br>
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque, facere quae voluptatem tempore
+                                    inventore repudiandae ipsam. Nesciunt nobis totam dolor dolores, commodi ipsam fugit aliquam
+                                    voluptatum, suscipit distinctio eos unde maiores omnis? Aut in magnam voluptatum vel deleniti sed
+                                    commodi odit, earum deserunt nostrum aperiam officia fuga eum aliquid architecto!</p>
+                            </div>
+                        </div>
+                        <!-- Add more slides as needed -->
+                    </div>
+            
+                    <!-- Next and previous buttons -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            
             <div class="container">
                 <div class="release">
                     <h3>Populair</h3>
@@ -79,7 +101,7 @@
                             <div class="register">
                                 <p>Don't have an account: <a href="#">Register</a></p><br><a href="#">Forget
                                     Password</a>
-                                    <h1 onclick="off()">Close</h1>
+                                <h1 onclick="off()">Close</h1>
                             </div>
                         </form>
                     </div>
