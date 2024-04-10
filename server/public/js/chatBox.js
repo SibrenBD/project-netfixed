@@ -11,18 +11,21 @@ document.addEventListener("DOMContentLoaded", function () {
         const message = userInput.value.trim();
         if (message !== "") {
             const messageDiv = document.createElement("div");
-            messageDiv.classList.add("message");
             messageDiv.textContent = message;
-            chatBox.appendChild(messageDiv);
-            chatBox.scrollTop = chatBox.scrollHeight;
-            userInput.value = "";
 
             // Toggle message alignment
             if (chatBox.querySelectorAll('.message').length % 2 === 0) {
-                messageDiv.classList.add("message__inner");
+                messageDiv.classList.add("message__bubble");
             } else {
-                messageDiv.classList.add("message__outer");
+                messageDiv.classList.add("message__bubble_alt");
             }
+
+            const messageContainer = document.createElement("div");
+            messageContainer.classList.add("message");
+            messageContainer.appendChild(messageDiv);
+            chatBox.appendChild(messageContainer);
+            chatBox.scrollTop = chatBox.scrollHeight;
+            userInput.value = "";
         }
     }
 

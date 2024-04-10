@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -225,6 +226,7 @@ a{
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
 }
 
 .input-box {
@@ -246,6 +248,75 @@ a{
     border: 1px solid #ccc;
     border-radius: 5px;
     color: #000;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header-chatbox */
+/* Styling the msg-header container */
+.msg-header {
+    border: 1px solid #ccc;
+    width: 100%;
+    height: 10%;
+    border-bottom: none;
+    background-color: #efefef;
+    display: flex;
+    align-items: center;
+}
+
+.msg-header > p {
+    margin-left: 10px;
+}
+
+.message__outer {
+    display: flex;
+}
+  
+.message__inner {
+    flex: 1;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.message {
+    display: flex;
+    justify-content: flex-start;
+    margin: 3px;
+}
+
+.message__bubble {
+    max-width: calc(100% - 67px);
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: auto;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow: auto;
+    color: #fff;
+    border: 2px solid blue;
+    background-color: #000;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.message__bubble_alt {
+    max-width: calc(100% - 67px);
+    overflow-wrap: break-word;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: auto;
+    max-width: 100%;
+    word-wrap: break-word;
+    overflow: auto;
+    color: #fff;
+    border: 2px solid #000;
+    background-color: green;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.message__actions {
+    flex-shrink: 0;
 }
   
 .input-box {
