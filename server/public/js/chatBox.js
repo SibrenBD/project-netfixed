@@ -19,9 +19,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
             // Toggle message alignment
             if (chatBox.querySelectorAll('.message').length % 2 === 0) {
-                messageDiv.classList.add("right-text");
+                messageDiv.classList.add("message__inner");
             } else {
-                messageDiv.classList.add("left-text");
+                messageDiv.classList.add("message__outer");
             }
         }
     }

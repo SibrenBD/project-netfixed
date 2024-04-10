@@ -191,12 +191,32 @@
             </div>
             <div class="chat-container">
                 <div class="chat-box" id="chat-box">
-                    <div class="left-text">First message on the left side</div>
+                    <div class="message">
+                        <div class="message__outer">
+                          <div class="message__avatar"></div>
+                          <div class="message__inner">
+                            <div class="msg-bubble-wrapper">
+                              <div class="message__bubble"></div>
+                              <div class="reaction">
+                                <div class="reaction__content">
+                                  <img src="assets/heart.png" alt="" />
+                                  <img src="assets/smile.png" alt="" />
+                                  <span class="count">2</span>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="message__actions"></div>
+                            <div class="message__spacer"></div>
+                          </div>
+                          <div class="message__status"></div>
+                        </div>
+                      </div>
+                    <div class="input-box">
+                        <input type="text" class="chat-input" id="user-input" placeholder="Type a message...">
+                        <button class="send-btn" id="send-btn">Send</button>
+                    </div>
                 </div>
-                <div class="input-box">
-                    <input type="text" class="chat-input" id="user-input" placeholder="Type a message...">
-                    <button class="send-btn" id="send-btn">Send</button>
-                </div>
+                
             </div>
         </main>
 
