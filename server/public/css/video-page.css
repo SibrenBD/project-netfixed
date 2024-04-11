@@ -239,12 +239,13 @@ a{
 }
   
 .chat-box {
+    position: relative;
     display: flex;
     flex-direction: column;
     height: 100%;
     width: 100%;
     height: 90%;
-    overflow: hidden;
+    overflow-x: scroll;
     border: 1px solid #ccc;
     border-radius: 5px;
     color: #000;
@@ -254,13 +255,14 @@ a{
 /* header-chatbox */
 /* Styling the msg-header container */
 .msg-header {
+    display: flex;
+    align-items: center;
+    padding: 5px;
     border: 1px solid #ccc;
     width: 100%;
     height: 10%;
     border-bottom: none;
-    background-color: #efefef;
-    display: flex;
-    align-items: center;
+    background-color: #7EC8E3;
 }
 
 .msg-header > p {
@@ -284,35 +286,34 @@ a{
 }
 
 .message__bubble {
-    max-width: calc(100% - 67px);
+    max-width: calc(60% - 67px);
     overflow-wrap: break-word;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: auto;
-    max-width: 100%;
     word-wrap: break-word;
-    overflow: auto;
+    margin-right: auto;
+    background-color: #0E86D4;
     color: #fff;
-    border: 2px solid blue;
-    background-color: #000;
-    border-radius: 6px;
+    border: 0;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 5px;
+    overflow: auto;
 }
 
+/* change it into 2 classes (.message__bubble/.alt) so I don't need to style it over again*/
 .message__bubble_alt {
-    max-width: calc(100% - 67px);
+    max-width: calc(60% - 67px);
     overflow-wrap: break-word;
-    display: flex;
-    justify-content: flex-start;
-    margin-left: auto;
-    max-width: 100%;
     word-wrap: break-word;
-    overflow: auto;
+    margin-left: auto;
+    background-color: #0E86D4;
     color: #fff;
-    border: 2px solid #000;
-    background-color: green;
-    border-radius: 6px;
+    border: 0;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
     padding: 5px;
+    overflow: auto;
 }
 
 .message__actions {
@@ -323,6 +324,7 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 10%;
 }   
 
 #user-input {

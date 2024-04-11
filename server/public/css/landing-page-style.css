@@ -48,12 +48,12 @@ header nav li:hover {
     cursor: pointer;
 }
 
-/* if move the title logo on top or bottom add/remove display: flex; */
+/* if you wanna change position use (justify-content:space-around) */
 header {
     display: flex;
+    justify-content: center;
     font-size: large;
     padding: 0.5rem;
-    justify-content: center;
     text-align: center;
     font-family: sans-serif;
 }
@@ -102,12 +102,16 @@ header input {
     text-decoration: underline 3px #ffc119;
 }
 
-.profile-container > img {
+.profile-container  img {
     border-radius: 50%;
-    max-width: 75px;
+    max-width: 60px;
     height: 100%;
     border: 2px solid black;
     border-radius: 50%; 
+}
+
+.profile-container > div {
+    margin: 5px;
 }
 
 .fa-arrow-right-to-bracket {
@@ -504,11 +508,6 @@ top: -5px;
 
     .start header nav li {
         display: none;
-    }
-
-    #keyword {
-        position: relative;
-        top: 0px;
     }
 
      input {
