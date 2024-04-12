@@ -1,4 +1,4 @@
-// recommandationsContainer
+// recommandations_Container
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -32,13 +32,14 @@ function carousel() {
   setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 
+// searchInput
 function searchItems() {
     const searchInput = document.getElementById('keyword').value.toLowerCase();
-    searchInSection('animeItems', searchInput);
+    searchInSection('anime', searchInput);
   }
 
   function searchInSection(sectionId, searchInput) {
-    const items = document.getElementById(sectionId).querySelectorAll('.item');
+    const items = document.getElementById(sectionId).querySelectorAll('.poster');
 
     for (let i = 0; i < items.length; i++) {
         const item = items[i];
@@ -60,18 +61,18 @@ function searchItems() {
 }
 
 // fetch data animes
-fetch("json/animes.json")
+fetch("../data/anime.json")
     .then((response) => response.json())
     .then((myData) => {
         console.log(myData);
-        const animeItems = document.getElementById('animeItems');
+        const animePosters = document.getElementById('anime');
         
         // Loop through object properties
         Object.keys(myData).forEach((animeKey) => {
             const anime = myData[animeKey];
 
-            animeItems.innerHTML += `
-            <div class="item" id="${anime.id}">
+            animePosters.innerHTML += `
+            <div class="poster" id="${anime.id}">
                 <a href="${anime.page}">
                     <img src="${anime.img}">
                     <p class="name">${anime.dubtitle}</p>

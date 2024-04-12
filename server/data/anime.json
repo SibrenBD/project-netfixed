@@ -5,7 +5,7 @@
         "subtitle": "Hepburn: Sōdo Āto Onrain",
         "img": "https://gogocdn.net/images/anime/S/sword-art-online.jpg",
         "episodes": 25,
-        "page": "./info-pages/sao-info-page.html",
+        "page": "info-pages/sao-info-page.html",
         "subUrl": [
             "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
             "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB",
@@ -43,7 +43,7 @@
         "subtitle": "Hepburn: Sōdo Āto Onrain II",
         "img": "https://gogocdn.net/images/summer/sao_2.jpg",
         "episodes": 24,
-        "page": "./info-pages/saoII-info-page.html",
+        "page": "info-pages/saoII-info-page.html",
         "subUrl": [
             "//goone.pro/streaming.php?id=NDQ4MzY=&amp;title=Sword+Art+Online+II+Episode+1&amp;typesub=SUB",
             "//goone.pro/streaming.php?id=NDQ5MTI=&amp;title=Sword+Art+Online+II+Episode+2&amp;typesub=SUB",
@@ -80,7 +80,7 @@
         "subtitle": "Sōdoāto onrain arishizēshon",
         "img": "https://gogocdn.net/cover/sword-art-online-alicization.png",
         "episodes": 24,
-        "page": "./info-pages/sao-alicization-page.html",
+        "page": "info-pages/sao-alicization-page.html",
         "subUrl": [
             "//embtaku.pro/streaming.php?id=MTEwNDUz&amp;title=Sword+Art+Online%3A+Alicization+Episode+1&amp;typesub=SUB",
                 "//embtaku.pro/streaming.php?id=MTEwNTcy&amp;title=Sword+Art+Online%3A+Alicization+Episode+2&amp;typesub=SUB",
@@ -143,7 +143,7 @@
         "subtitle": "Sōdoāto onrain arishizēshon u~ō of andāwārudo",
         "img": "https://gogocdn.net/cover/undead-unluck-1696013292.png",
         "episodes": 13,
-        "page": "./info-pages/undead unluck.html",
+        "page": "info-pages/undead unluck.html",
         "subUrl": [
             ""
         ],
@@ -157,7 +157,7 @@
         "subtitle": "Sōdoāto onrain arishizēshon u~ō of andāwārudo",
         "img": "https://gogocdn.net/cover/gotoubun-no-hanayome.png",
         "episodes": 12,
-        "page": "./info-pages/gotobun no hanayome.html",
+        "page": "info-pages/gotobun no hanayome.html",
         "subUrl": [
             "//embtaku.pro/streaming.php?id=MTEyNDQ0&amp;title=Gotoubun+no+Hanayome+Episode+1&amp;typesub=SUB",
             "//embtaku.pro/streaming.php?id=MTEyNTkx&amp;title=Gotoubun+no+Hanayome+Episode+2&amp;typesub=SUB",
@@ -180,9 +180,9 @@
         "id": 7,
         "dubtitle": "You Were Experienced, I Was Not: Our Dating Story",
         "subtitle": "Keikenzumi-na-Kimi-to,-Keiken-Zero-na-Ore-ga,-Otsukiai-suru-Hanashi",
-        "img": "https://www7.gogoanime.me/cover/keikenzumi-na-kimi-to-keiken-zero-na-ore-ga-otsukiai-suru-hanashi.png",
+        "img": "https://image.tmdb.org/t/p/original/ylz5RxpOCWkxIBiCCmNAlJcxYLn.jpg",
         "episodes": 11,
-        "page": "./info-pages/You Were Experienced.html",
+        "page": "info-pages/You Were Experienced.html",
         "subUrl": [
             ""
         ],
@@ -196,7 +196,7 @@
         "subtitle": "Sōdoāto onrain arishizēshon u~ō of andāwārudo",
         "img": "https://gogocdn.net/cover/kage-no-jitsuryokusha-ni-naritakute-1664388804.png",
         "episodes": 12,
-        "page": "./info-pages/shadowgarden-page.html",
+        "page": "info-pages/shadowgarden-page.html",
         "subUrl": [
             "//embtaku.pro/streaming.php?id=MTkzMjg0&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+1&amp;typesub=SUB",
             "//embtaku.pro/streaming.php?id=MTkzNTg5&amp;title=Kage+no+Jitsuryokusha+ni+Naritakute%21+Episode+2&amp;typesub=SUB",
@@ -229,7 +229,7 @@
         "subtitle": "Oshi no ko",
         "img": "https://gogocdn.net/cover/oshi-no-ko-1680121500.png",
         "episodes": 11,
-        "page": "./info-pages/oshinoko-page.html",
+        "page": "info-pages/oshinoko-page.html",
         "subUrl": [
             "//embtaku.pro/streaming.php?id=MjAyNjQ3&title=%22Oshi+no+Ko%22+Episode+1&typesub=SUB",
             "//embtaku.pro/streaming.php?id=MjAzMDkw&title=%22Oshi+no+Ko%22+Episode+2&typesub=SUB",
@@ -247,5 +247,105 @@
         "dubUrl": [
             ""
         ]
+    },
+    "YOUR-NAME": {
+        "id": 11,
+        "dubtitle": "Your Name",
+        "img": "https://gogocdn.net/cover/kimi-no-na-wa.jpg",
+        "episodes": 1,
+        "page": "info-pages/your-name-page.html",
+        "url": [
+            ""
+        ]
+    },
+    
+    "SWORD-ART-ONLINE-Ordinal-Scale": {
+        "id": 12,
+        "dubtitle": "SWORD ART ONLINE Ordinal Scale",
+        "img": "https://gogocdn.net/cover/sword-art-online-movie-ordinal-scale.png",
+        "episodes": 1,
+        "page": "info-pages/SWORD ART ONLINE Ordinal Scale.html",
+        "url": [
+            ""
+        ]
+    },
+
+    "Weathering-with-You": {
+        "id": 13,
+        "dubtitle": "Weathering with You",
+        "img": "https://www.lab111.nl/wp-content/uploads/2019/12/Weathering-with-You_ps_1_jpg_sd-low.jpg",
+        "episodes": 1,
+        "page": "info-pages/Weathering with You.html",
+        "url": [
+            ""
+        ]
+    },
+
+    "Sazume": {
+        "id": 14,
+        "dubtitle": "Sazume",
+        "img": "https://m.media-amazon.com/images/M/MV5BNGVkNDc3NjUtNTY5ZS00ZmE0LWE3YzctMDk2OTRlNTdiZWQwXkEyXkFqcGdeQXVyMTU3NDg0OTgx._V1_.jpg",
+        "episodes": 1,
+        "page": "info-pages/Sazume.html",
+        "url": [
+            ""
+        ]
+    },
+
+    "A-silent-voice": {
+        "id": 15,
+        "dubtitle": "A silent voice",
+        "img": "https://ae01.alicdn.com/kf/S94ed6f8384ef41988a709595ef9e1322s.jpg_640x640Q90.jpg_.webp",
+        "episodes": 1,
+        "page": "info-pages/A silent voice.html",
+        "url": [
+            "//embtaku.pro/streaming.php?id=MTczMzc1&title=Kimi+wa+Kanata+Episode+1&typesub=SUB"
+        ]
+    },
+    "solo-leveling": {
+        "id": 1,
+        "dubtitle": "Solo Leveling",
+        "subtitle": "Ore dake Level Up na Ken",
+        "img": "https://m.media-amazon.com/images/M/MV5BODJkZTM3MWYtOTkxNS00YWUxLTg5NjAtOTk4ZWM5MTBmMzAyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_.jpg",
+        "episodes": 12,
+        "page": "info-pages/sao-info-page.html",
+        "subUrl": [
+            "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB"
+        ],
+        "dubUrl": [
+            ""
+        ]
+    }, 
+    "NANATSU NO TAIZAI: MOKUSHIROKU NO YONKISHI": {
+        "id": 2,
+        "dubtitle": "Four Knights Of Apocalypse",
+        "subtitle": "NANATSU NO TAIZAI: MOKUSHIROKU NO YONKISHI",
+        "img": "https://gogocdn.net/cover/nanatsu-no-taizai-mokushiroku-no-yonkishi-1696010923.png",
+        "episodes": 9,
+        "page": "#",
+        "subUrl": [
+            "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB"
+        ],
+        "dubUrl": [
+            ""
+        ]
+    },
+    "Jujutsu Kaisen 2nd Season": {
+        "id": 2,
+        "dubtitle": "Jujutsu Kaisen 2nd Season",
+        "subtitle": "",
+        "img": "https://m.media-amazon.com/images/I/71mqttVzH-L._AC_UF894,1000_QL80_.jpg",
+        "episodes": 24,
+        "page": "info-pages/Jujutsu Kaisen 2nd Season.html",
+        "subUrl": [
+            "//goone.pro/streaming.php?id=MzkzNDQ=&amp;title=Sword+Art+Online+Episode+1&amp;typesub=SUB",
+            "//goone.pro/streaming.php?id=MzkzNDU=&amp;title=Sword+Art+Online+Episode+2&amp;typesub=SUB"
+        ],
+        "dubUrl": [
+            ""
+        ]
     }
+    
 }
