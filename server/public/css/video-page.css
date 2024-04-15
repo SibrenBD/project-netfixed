@@ -32,36 +32,30 @@ html, body {
     color: #ffc119;
 }
 
-.start header nav li {
-    border-radius: 3px;
-    display: inline-block;
-    list-style-type: none;
-    color: #fff;
-    margin: 25px;
-}
-
-/* hover */
-.start header nav li:hover {
-    text-decoration: underline 3px #ffc119;
-    color: #ffc119;
-}
-
 header {
     display: flex;
     flex-wrap: wrap;
     font-size: large;
     padding: 1rem;
     justify-content: center;
+    align-items: center;
     text-align: center;
     font-family: sans-serif;
 }
 
 header h3 {
     position: relative;
-    top: 5px;
     font-size: xx-large;
     color: yellow;
     padding: 10px;
+}
+
+header nav li {
+    border-radius: 3px;
+    display: inline-block;
+    list-style-type: none;
+    color: #fff;
+    margin: 25px;
 }
 
 main {
@@ -150,15 +144,6 @@ iframe {
     border-style: inset;
     border-color: initial;
     border-image: initial;
-}
-
-h3 {
-    margin-top: 0;
-}
-
-a{
-    text-decoration: none;
-    color: black;
 }
 
 .btn {

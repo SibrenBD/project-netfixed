@@ -41,14 +41,12 @@ header {
     font-size: large;
     padding: 1rem;
     justify-content: center;
+    align-items: center;
     text-align: center;
-    font-family: sans-serif;
 }
 
 header h3 {
     font-size: xx-large;
-    /* -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #ffc119; */
     color: yellow;
     padding: 10px;
 }   
