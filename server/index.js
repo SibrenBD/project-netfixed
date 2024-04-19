@@ -1,5 +1,6 @@
 
 import express from 'express';
+import db from './db';
 import path from 'path';
 import fs from 'fs';
 import cors from 'cors';
@@ -35,11 +36,17 @@ app.get('/new', (req, res) => {
     });
 });
 
+app.get("/api/<route>", async (req, res) => {
+    let collection = await db.collection("<collection-name>");
+    let results = await collection.find({})
+    .limit(50)
+    .toArray();
+    console.log(results);
+    res.send(results).status(200);
+});
+
 // Configure server to listen on all available network interfaces
 app.listen(port, '0.0.0.0', () => {
     console.log(`Example app listening on port ${port}`);
 });
 
-// app.listen(port, () => {
-//     console.log(`Example app listening on port ${port}`);
-// });

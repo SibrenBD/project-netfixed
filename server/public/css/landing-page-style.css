@@ -73,6 +73,7 @@ header nav li {
     display: flex;
     align-items: center;
     color: #ffc119;
+    cursor: pointer;
 }
 
 .underline {
