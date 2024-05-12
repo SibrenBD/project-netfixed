@@ -1,6 +1,6 @@
 
 import express from 'express';
-import db from './db';
+import db from './db.js';
 import path from 'path';
 import fs from 'fs';
 import cors from 'cors';
@@ -45,8 +45,17 @@ app.get("/api/<route>", async (req, res) => {
     res.send(results).status(200);
 });
 
-// Configure server to listen on all available network interfaces
-app.listen(port, '0.0.0.0', () => {
-    console.log(`Example app listening on port ${port}`);
+import { connection } from './db.js';
+
+app.get("/api/<route>", async (req, res) => {
+    let collection = connection.collection("AdminUser");
+    let results = await collection.find({}).limit(50).toArray();
+    console.log(results);
+    res.send(results).status(200);
 });
 
+connectToMongoDB().then(() => {
+    app.listen(port, '0.0.0.0', () => {
+        console.log(`Example app listening on port ${port}`);
+    });
+});

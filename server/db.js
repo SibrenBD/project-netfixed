@@ -1,11 +1,18 @@
 import { MongoClient } from "mongodb";
-const connectionString = process.env.DB || "";
+
+const connectionString = process.env.DB || "mongodb://localhost:27017";
 const client = new MongoClient(connectionString);
+
 let connection;
-try {
-    connection = await client.connect();
-} catch (e) {
-    console.error(e);
-}
-let db = connection.db("<databas-name>");
-export default db;
+
+const connectToMongoDB = async () => {
+  try {
+    await client.connect();
+    connection = client.db("UserDatabase");
+    console.log("Connected to MongoDB!");
+  } catch (error) {
+    console.error("Error connecting to MongoDB:", error);
+  }
+};
+
+export { connectToMongoDB, connection };
