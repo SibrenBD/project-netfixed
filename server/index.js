@@ -1,9 +1,11 @@
 
 import express from 'express';
-import db from './db.js';
 import path from 'path';
+import dotenv from 'dotenv';
 import fs from 'fs';
 import cors from 'cors';
+
+dotenv.config();
 
 const app = express();
 const port = 3000;
@@ -36,26 +38,6 @@ app.get('/new', (req, res) => {
     });
 });
 
-app.get("/api/<route>", async (req, res) => {
-    let collection = await db.collection("<collection-name>");
-    let results = await collection.find({})
-    .limit(50)
-    .toArray();
-    console.log(results);
-    res.send(results).status(200);
-});
-
-import { connection } from './db.js';
-
-app.get("/api/<route>", async (req, res) => {
-    let collection = connection.collection("AdminUser");
-    let results = await collection.find({}).limit(50).toArray();
-    console.log(results);
-    res.send(results).status(200);
-});
-
-connectToMongoDB().then(() => {
-    app.listen(port, '0.0.0.0', () => {
-        console.log(`Example app listening on port ${port}`);
-    });
+app.listen(port, '0.0.0.0', () => {
+    console.log(`Example app listening on port ${port}`);
 });
