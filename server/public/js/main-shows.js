@@ -3,42 +3,42 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-  showSlides(slideIndex += n);
+    showSlides(slideIndex += n);
 }
 
 function showSlides(n) {
-  let i;
-  const slides = document.querySelectorAll(".slide");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  slides[slideIndex-1].style.display = "block";
+    let i;
+    const slides = document.querySelectorAll(".slide");
+    if (n > slides.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = slides.length }
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    slides[slideIndex - 1].style.display = "block";
 }
 
 var myIndex = 0;
 carousel();
 
 function carousel() {
-  var i;
-  var x = document.querySelectorAll(".slide");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}    
-  x[myIndex-1].style.display = "block";  
-  setTimeout(carousel, 5000); // Change image every 5 seconds
+    var i;
+    var x = document.querySelectorAll(".slide");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) { myIndex = 1 }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 
 // searchInput
 function searchItems() {
     const searchInput = document.getElementById('keyword').value.toLowerCase();
     searchInSection('anime', searchInput);
-  }
+}
 
-  function searchInSection(sectionId, searchInput) {
+function searchInSection(sectionId, searchInput) {
     const items = document.getElementById(sectionId).querySelectorAll('.poster');
 
     for (let i = 0; i < items.length; i++) {
@@ -61,15 +61,20 @@ function searchItems() {
 }
 
 // fetch data animes
-fetch("../data/anime.json")
+fetch("http://localhost:3000/animeSerie")
     .then((response) => response.json())
     .then((myData) => {
-        console.log(myData);
+        const test = myData[0]
+        console.log(test);
         const animePosters = document.getElementById('anime');
-        
+
         // Loop through object properties
-        Object.keys(myData).forEach((animeKey) => {
-            const anime = myData[animeKey];
+        // Object.keys(myData).forEach((animeKey) => {
+        //     const anime = myData[animeKey];
+
+        for (let i = 0; i < myData.length; i++) {
+            const anime = myData[i];
+            if (i > 0) {
 
             animePosters.innerHTML += `
             <div class="poster" id="${anime.id}">
@@ -79,39 +84,44 @@ fetch("../data/anime.json")
                     <p class="episode">episodes: ${anime.episodes}</p>
                 </a>
             </div>`;
-        });
-    });
-
-
-    //   login authenticator
-    let config = document.querySelector(".configuration")
-    document.addEventListener('DOMContentLoaded', function () {
-        document.querySelector('.login-form').addEventListener('submit', function (event) {
-            event.preventDefault();
-            
-            let username = document.querySelector('.login-form input[type="text"]').value;
-            let password = document.querySelector('.login-form input[type="password"]').value;
-    
-            if (username === 'Admin' && password === 'Admin') {
-                config.textContent = "Loged in";
-                setInterval(function() {
-                    executed = true;
-                   off()
-                   return; 
-                }, 2000)
-                window.open("./Modernize-1.0.0/src/html/index.html");
-            } else {
-                config.textContent = "Invalid username or password";
             }
-        });
+
+        }
+
+
     });
+// });
 
-    //   Login Display pop up
 
-    function on() {
-        document.querySelector(".overlay").style.display = "block";
-      }
-      
-      function off() {
-        document.querySelector(".overlay").style.display = "none";
-      }
+//   login authenticator
+let config = document.querySelector(".configuration")
+document.addEventListener('DOMContentLoaded', function () {
+    document.querySelector('.login-form').addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        let username = document.querySelector('.login-form input[type="text"]').value;
+        let password = document.querySelector('.login-form input[type="password"]').value;
+
+        if (username === 'Admin' && password === 'Admin') {
+            config.textContent = "Loged in";
+            setInterval(function () {
+                executed = true;
+                off()
+                return;
+            }, 2000)
+            window.open("./Modernize-1.0.0/src/html/index.html");
+        } else {
+            config.textContent = "Invalid username or password";
+        }
+    });
+});
+
+//   Login Display pop up
+
+function on() {
+    document.querySelector(".overlay").style.display = "block";
+}
+
+function off() {
+    document.querySelector(".overlay").style.display = "none";
+}

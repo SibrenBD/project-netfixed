@@ -31,21 +31,7 @@ app.get('/', (req, res) => {
 });
 
 app.get('/animes', (req, res) => {
-    fs.readFile('data/animes.json', 'utf8', (err, data) => {
-        res.setHeader('Content-Type', 'application/json;charset=UTF-8');
-        res.send(data);
-    });
-});
-
-app.get('/movies', (req, res) => {
-    fs.readFile('data/movies.json', 'utf8', (err, data) => {
-        res.setHeader('Content-Type', 'application/json;charset=UTF-8');
-        res.send(data);
-    });
-});
-
-app.get('/new', (req, res) => {
-    fs.readFile('data/new.json', 'utf8', (err, data) => {
+    fs.readFile('data/anime.json', 'utf8', (err, data) => {
         res.setHeader('Content-Type', 'application/json;charset=UTF-8');
         res.send(data);
     });
@@ -71,6 +57,33 @@ async function fetchUsers() {
         await client.close();
     }
 }
+
+async function fetchAnimeSeries() {
+
+    try {
+        // connect the client to the server
+        await client.connect();
+        //we connection with the test database
+        const database = client.db("Netfixed-Anime");
+        //we connect with the user collection
+        const collection = database.collection('Anime-series');
+        //we fetch the users from our database
+        const users = await collection.find().toArray();
+        //finally we return the cheeses
+        return users;
+    } finally {
+        // ensures that the client will close when you finish/error
+        await client.close();
+    }
+}
+
+app.get('/animeSerie', (req, res) => {
+
+    fetchAnimeSeries().then(anime => {
+    res.json(anime);
+    });
+});
+
 app.get('/users', (req, res) => {
 
     fetchUsers().then(users => {
