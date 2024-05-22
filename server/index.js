@@ -85,7 +85,7 @@ app.get('/animeSerie', (req, res) => {
 });
 
 app.get('/users', (req, res) => {
-
+    
     fetchUsers().then(users => {
     res.json(users);
     });

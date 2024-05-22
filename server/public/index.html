@@ -39,8 +39,61 @@
             </nav>
             <div class="profile-container">
                 <div>
-                    <h4 onclick="on()">login&#124;register</h4>
+                    <h4 onclick="on()">Sign in</h4>
                 </div>
+                <section class="overlay" id="overlay">
+                    <div class="content">
+                        <div class="form-box">
+                            <div class="form-value">
+                                <!-- Login Form -->
+                                <form class="login-form" method="get">
+                                    <h2>Login</h2><i class="fa-solid fa-xmark" onclick="off()"></i>
+                                    <div class="inputbox">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <input type="text" required>
+                                        <label for="">Username</label>
+                                    </div>
+                                    <div class="inputbox">
+                                        <ion-icon name="lock-closed-outline"></ion-icon>
+                                        <input type="password" id="password" required>
+                                        <label for="">Password</label>
+                                    </div>
+                                    <button type="submit" class="configuration">Sign in</button>
+                                    <div class="register">
+                                        <p>Don't have an account: <a href="#" onclick="switchToRegister()">Register</a></p>
+                                    </div>
+                                    <h1 onclick="off()">Close</h1>
+                                </form>
+                
+                                <!-- Register Form -->
+                                <form class="register-form" method="get" style="display:none;">
+                                    <h2>Register</h2><i class="fa-solid fa-xmark" onclick="off()"></i>
+                                    <div class="inputbox">
+                                        <ion-icon name="person-outline"></ion-icon>
+                                        <input type="text" required>
+                                        <label for="">Username</label>
+                                    </div>
+                                    <div class="inputbox">
+                                        <ion-icon name="mail-outline"></ion-icon>
+                                        <input type="email" required>
+                                        <label for="">Email</label>
+                                    </div>
+                                    <div class="inputbox">
+                                        <ion-icon name="lock-closed-outline"></ion-icon>
+                                        <input type="password" required>
+                                        <label for="">Password</label>
+                                    </div>
+                                    <button type="submit" class="configuration">Sign up</button>
+                                    <div class="register">
+                                        <p>Already have an account: <a href="#" onclick="switchToLogin()">Login</a></p>
+                                    </div>
+                                    <h1 onclick="off()">Close</h1>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
                 <!-- <div>
                     <a href="">
                         <img src="https://p7.hiclipart.com/preview/340/956/944/computer-icons-user-profile-head-ico-download.jpg"
@@ -112,33 +165,7 @@
             <p><a href="">About us</a> | <a href=""> Contact us</a> | <a href="">Privacy</a> | <a
                     href="index.html">Netfixed</a></p>
         </footer>
-        <section class="overlay">
-            <div class="content">
-                <div class="form-box">
-                    <div class="form-value">
-                        <!-- anable to add users to database and login from database -->
-                        <form class="login-form" method="get">
-                            <h2>Login</h2><i class="fa-solid fa-xmark" onclick="off()"></i>
-                            <div class="inputbox">
-                                <ion-icon name="mail-outline"></ion-icon>
-                                <input type="text" required>
-                                <label for="">Username</label>
-                            </div>
-                            <div class="inputbox">
-                                <ion-icon name="lock-closed-outline"></ion-icon>
-                                <input type="password" id="password" required>
-                                <label for="">Password</label>
-                            </div>
-                            <button type="submit" class="configuration">Log in</button>
-                            <!-- Register -->
-                            <div class="register">
-                                <p>Don't have an account: <a href="#">Register</a></p>
-                                <h1 onclick="off()">Close</h1>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-        </section>
+        
     </div>
     <script src="./js/main-shows.js"></script>
     </div>

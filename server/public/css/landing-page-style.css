@@ -308,7 +308,7 @@ footer a {
     bottom: 0;
     z-index: 9999;
 }
-  
+
 .content {
     position: absolute;
     top: 50%;
@@ -318,7 +318,7 @@ footer a {
     -ms-transform: translate(-50%,-50%);
 }
 
-section{
+section {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -332,14 +332,13 @@ section{
     animation: fadein 0.7s ease-in;
 }
 
-.form-box{
+.form-box {
     position: relative;
     width: 500px;
     height: 550px;
-    /* background: url(https://img.freepik.com/premium-vector/night-landscape-scene-with-full-moon-clouds-vector-illustration_263779-1357.jpg); */
     background: transparent;
-    background-position: center; 
-    background-repeat: no-repeat; 
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     border: 3px solid #ffc119;
     border-radius: 20px;
@@ -349,16 +348,16 @@ section{
     align-items: center;
 }
 
-.dub ,.sub{
+.dub, .sub {
     margin-left: 4px;
     text-align: center;
     background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
 }
 
 h2 {
@@ -366,14 +365,14 @@ h2 {
     font-size: xx-large;
 }
 
-.inputbox{
+.inputbox {
     position: relative;
     margin: 30px 0;
     width: 310px;
     border-bottom: 2px solid #fff;
 }
 
-.inputbox label{
+.inputbox label {
     position: absolute;
     top: 50%;
     left: 5px;
@@ -384,8 +383,8 @@ h2 {
 }
 
 input:focus ~ label,
-input:valid ~ label{
-top: -5px;
+input:valid ~ label {
+    top: -5px;
 }
 
 .inputbox input {
@@ -395,34 +394,12 @@ top: -5px;
     border: none;
     outline: none;
     font-size: 1em;
-    padding:0 35px 0 5px;
+    padding: 0 35px 0 5px;
     color: #fff;
 }
 
 #password {
     color: black;
-}
-
-.forget{
-    margin: -15px 0 15px ;
-    font-size: .9em;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;  
-}
-
-.forget label input{
-    margin-right: 3px;
-    
-}
-
-.forget label a{
-    color: #fff;
-    text-decoration: none;
-}
-
-.forget label a:hover{
-    text-decoration: underline;
 }
 
 .configuration {
@@ -437,7 +414,7 @@ top: -5px;
     font-weight: 600;
 }
 
-.register{
+.register {
     font-size: .9em;
     color: #fff;
     text-align: center;
@@ -449,17 +426,26 @@ top: -5px;
     text-decoration: underline;
 }
 
-.register a{
-  color:#fff;
-  cursor: pointer;
+.register a {
+    color: #1338BE;
+    cursor: pointer;
 }
 
-.register p a{
+.register p a {
     text-decoration: none;
-    color: #fff;
+    color: #1338BE;
 }
 
-.register p a:hover{
+.register p a:hover {
+    text-decoration: underline;
+}
+
+.login-form h1, .register-form h1 {
+    text-decoration: none;
+    color: #1338BE;
+}
+
+.login-form h1:hover, .register-form h1:hover {
     text-decoration: underline;
 }
 

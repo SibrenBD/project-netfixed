@@ -125,3 +125,16 @@ function on() {
 function off() {
     document.querySelector(".overlay").style.display = "none";
 }
+
+// Register
+function switchToRegister() {
+    document.querySelector('.login-form').style.display = 'none';
+    document.querySelector('.register-form').style.display = 'block';
+}
+
+function switchToLogin() {
+    document.querySelector('.register-form').style.display = 'none';
+    document.querySelector('.login-form').style.display = 'block';
+}
+
+
