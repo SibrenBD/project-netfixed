@@ -110,8 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 return;
             }, 2000)
             window.open("./Modernize-1.0.0/src/html/index.html");
-        } else {
-            config.textContent = "Invalid username or password";
         }
     });
 });
@@ -136,5 +134,46 @@ function switchToLogin() {
     document.querySelector('.register-form').style.display = 'none';
     document.querySelector('.login-form').style.display = 'block';
 }
+
+console.log('register loaded');
+
+const registerButton = document.querySelector('.register-configuration');
+const usernameField = document.querySelector('.register-username')
+const emailField = document.querySelector('.register-email');
+const passwordField = document.querySelector('.register-password');
+
+registerButton.addEventListener('click', function () {
+    emailField.classList.remove('red');
+    passwordField.classList.remove('red');
+    //post fetch to webservice 
+    (async () => {
+        const rawResponse = await fetch('/register', {
+            method: 'POST',
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ email: emailField.value, password: passwordField.value })
+        });
+        const content = await rawResponse.json();
+        console.log(content);
+        if (content.success) {
+            switchToLogin();
+        } else {
+            for (let i = 0; i < content.details.body.length; i++) {
+                if (content.details.body[i].context.label == 'text') {
+                    usernameField.style.borderBottom =  '2px solid red'
+                }
+                
+                if (content.details.body[i].context.label == 'email') {
+                    emailField.style.borderBottom =  '2px solid red'
+                }
+                if (content.details.body[i].context.label == 'password') {
+                    passwordField.style.borderBottom =  '2px solid red'
+                }
+            }
+        }
+    })();
+});
 
 

@@ -1,6 +1,8 @@
 
 import express from 'express';
 import path from 'path';
+import bodyParser from 'body-parser';
+import { validate, ValidationError, Joi } from 'express-validation';
 import dotenv from 'dotenv';
 import { MongoClient, ServerApiVersion } from 'mongodb';
 import fs from 'fs';
@@ -11,20 +13,19 @@ dotenv.config();
 const app = express();
 const port = 3000;
 
+app.use(cors());
+app.use(express.static('public'));
+app.use(bodyParser.json());
+
 const databaseUrl = process.env.CONNECTION_URL;
 const client = new MongoClient(databaseUrl, {
     serverApi: {
 
         version: ServerApiVersion.v1,
-
         strict: true,
-
         deprecationErrors: true,
     }
 });
-
-app.use(express.static('public'));
-app.use(cors());
 
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
@@ -37,7 +38,7 @@ app.get('/animes', (req, res) => {
     });
 });
 
-//this function returns all cheeses from the cheese collection in Mongodb
+//this function returns all data from the collection in Mongodb
 
 async function fetchUsers() {
 
@@ -80,15 +81,50 @@ async function fetchAnimeSeries() {
 app.get('/animeSerie', (req, res) => {
 
     fetchAnimeSeries().then(anime => {
-    res.json(anime);
+        res.json(anime);
     });
 });
 
 app.get('/users', (req, res) => {
-    
+
     fetchUsers().then(users => {
-    res.json(users);
+        res.json(users);
     });
+});
+
+const userArray = [];
+
+const registerValidation = {
+    body: Joi.object({
+        username: Joi.string()
+        .required(),
+        email: Joi.string()
+            .email()
+            .required(),
+        password: Joi.string()
+            .regex(/[a-zA-Z0-9]{7,30}/)
+            .required(),
+    }),
+};
+
+app.post('/register', validate(registerValidation, {}, {abortEarly: false}), (req, res) => {
+    const username = req.body.username;
+    const email = req.body.email;
+    const password = req.body.password;
+    userArray.push({
+        username: username,
+        email: email,
+        password: password
+    });
+    res.send( {success: true} );
+});
+
+app.use(function (err, req, res, next) {
+    if (err instanceof ValidationError) {
+        return res.status(err.statusCode).json(err)
+    }
+
+    return res.status(500).json(err)
 });
 
 app.listen(port, '0.0.0.0', () => {
