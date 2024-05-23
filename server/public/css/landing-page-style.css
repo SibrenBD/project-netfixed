@@ -374,7 +374,7 @@ h2 {
 
 .inputbox label {
     position: absolute;
-    top: 50%;
+    top: -5px;
     left: 5px;
     transform: translateY(-50%);
     font-size: 1em;
@@ -382,10 +382,10 @@ h2 {
     transition: .2s;
 }
 
-input:focus ~ label,
+/* input:focus ~ label,
 input:valid ~ label {
     top: -5px;
-}
+} */
 
 .inputbox input {
     width: 100%;
