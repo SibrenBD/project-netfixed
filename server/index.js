@@ -137,12 +137,12 @@ app.post('/authenticate', validate(registerValidation2, {}, {abortEarly: false})
     let loggedIn = false;
     for (let i = 0; i < userArray.length; i++) {
         const user = userArray[i];
-        if (user.email === username && user.password === password) {
+        if (user.email.toLowerCase() === username.toLowerCase() && user.password === password) {
             res.send( {success: true} );
             loggedIn = true;
             break;
         } 
-        if (user.username === username && user.password === password) {
+        if (user.username.toLowerCase() === username.toLowerCase() && user.password === password) {
             res.send( {success: true} );
             loggedIn = true;
             break;
