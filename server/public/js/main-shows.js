@@ -161,7 +161,7 @@ registerButton.addEventListener('click', function () {
             switchToLogin();
         } else {
             for (let i = 0; i < content.details.body.length; i++) {
-                if (content.details.body[i].context.label == 'text') {
+                if (content.details.body[i].context.label == 'username') {
                     usernameField.style.borderBottom =  '2px solid red'
                 }
                 
