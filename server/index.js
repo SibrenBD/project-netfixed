@@ -102,7 +102,17 @@ const registerValidation = {
             .email()
             .required(),
         password: Joi.string()
-            .regex(/[a-zA-Z0-9]{7,30}/)
+            .regex(/[a-zA-Z0-9]{3,30}/)
+            .required(),
+    }),
+};
+
+const registerValidation2 = {
+    body: Joi.object({
+        username: Joi.string()
+            .required(),
+        password: Joi.string()
+            .regex(/[a-zA-Z0-9]{3,30}/)
             .required(),
     }),
 };
@@ -117,6 +127,30 @@ app.post('/register', validate(registerValidation, {}, {abortEarly: false}), (re
         password: password
     });
     res.send( {success: true} );
+});
+
+app.post('/authenticate', validate(registerValidation2, {}, {abortEarly: false}), (req, res) => {
+    const username = req.body.username;
+    const password = req.body.password;
+
+    //check if user exists and check password
+    let loggedIn = false;
+    for (let i = 0; i < userArray.length; i++) {
+        const user = userArray[i];
+        if (user.email === username && user.password === password) {
+            res.send( {success: true} );
+            loggedIn = true;
+            break;
+        } 
+        if (user.username === username && user.password === password) {
+            res.send( {success: true} );
+            loggedIn = true;
+            break;
+        } 
+    }
+    if(!loggedIn){
+        res.send( {success: false} );
+    }
 });
 
 app.use(function (err, req, res, next) {
