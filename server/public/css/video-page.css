@@ -59,9 +59,8 @@ header nav li {
 }
 
 main {
-    display: grid;
-    grid-template-columns: 70% 20%;
-    justify-content: space-evenly;
+    width: 80%;
+    margin: auto;
 }
 
 .container {
@@ -337,6 +336,10 @@ iframe {
 }
 
 @media only screen and (max-width: 800px) and (min-width: 300px) {
+
+    main {
+        width: 100%;
+    }
 
     .video,
     iframe {

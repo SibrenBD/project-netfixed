@@ -90,15 +90,15 @@ header nav li {
 }
 
 .profile-container > div {
-    margin: 5px;
+    display: flex;
+    align-self: center;
+    justify-self: space-between;
+    margin: 15px;
 }
 
-.fa-arrow-right-to-bracket {
-    position: relative;
-    top: 20px;
-    right: 10px;
-    cursor: pointer;
-    color: #ffc119;
+.profile-container > i {
+    font-size: large;
+    font-weight: 600;
 }
 
 .slideshow-container {
