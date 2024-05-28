@@ -32,6 +32,24 @@ function carousel() {
     setTimeout(carousel, 5000); // Change image every 5 seconds
 }
 
+// menu
+document.addEventListener('DOMContentLoaded', function () {
+    const menuIcon = document.querySelector('.gg-menu');
+    const overlayMenu = document.querySelector('.overlay-menu');
+  
+    // Toggle overlay menu when menu icon is clicked
+    menuIcon.addEventListener('click', function () {
+      overlayMenu.classList.toggle('open');
+    });
+  
+    // Close overlay menu when clicked outside of it
+    overlayMenu.addEventListener('click', function (event) {
+      if (!event.target.closest('ul')) {
+        overlayMenu.classList.remove('open');
+      }
+    });
+  });
+
 // searchInput
 function searchItems() {
     const searchInput = document.getElementById('keyword').value.toLowerCase();

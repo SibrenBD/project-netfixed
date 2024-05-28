@@ -76,8 +76,41 @@ header nav li {
     cursor: pointer;
 }
 
-.underline {
-    text-decoration: underline 3px #ffc119;
+/* Overlay menu styles */
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100%;
+    background-color: rgb(36, 34, 34);
+    transition: right 0.3s ease;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+  
+.overlay-menu.open {
+    right: 0;
+}
+  
+.overlay-menu ul {
+    /* position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); */
+    list-style: none;
+    padding: 0;
+}
+  
+.overlay-menu ul li {
+    margin-bottom: 20px;
+}
+  
+.overlay-menu ul li a {
+    /* color: white; */
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .profile-container  img {
