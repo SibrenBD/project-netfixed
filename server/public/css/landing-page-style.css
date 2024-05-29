@@ -9,16 +9,9 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    background-color: black;
-}
-
 .start {
     position: relative;
     background-color: rgb(36, 34, 34);
-    width: 80%;
-    margin: auto;
-    max-height: 100%;
     color: #fff;
 }
 
@@ -31,16 +24,15 @@ body {
     color: #ffc119;
 }
 
-/* if you wanna change position use (justify-content:space-around) */
 header {
+    position: relative;
     width: 80%;
     margin: auto;
     display: flex;
     justify-content: space-around;
-    font-size: large;
-    padding: 0.5rem;
-    text-align: center;
     font-family: sans-serif;
+    font-size: large;
+    z-index: 9999;
 }
 
 header h3 {
@@ -51,29 +43,39 @@ header h3 {
     color: yellow;
     padding: 15px;
 }
-
-header nav {
-    display: flex;
-    align-items: center;
-}
-
-header nav li {
-    border-radius: 3px;
+  
+nav {
     float: left;
+    margin: 25px;
+}
+  
+nav a,
+nav li {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     list-style-type: none;
+    text-decoration: none;
     color: #fff;
-    margin: 5px;
-    display: flex;
-    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 /* Implement a better Hover  */
-
 .profile-container {
     display: flex;
     align-items: center;
     color: #ffc119;
     cursor: pointer;
+}
+
+/* menu */
+i .gg-menu {
+    display: none;
 }
 
 /* Overlay menu styles */
@@ -83,7 +85,7 @@ header nav li {
     right: -100%;
     width: 40%;
     height: 100%;
-    background-color: rgb(36, 34, 34);
+    background-color: #242222;
     transition: right 0.3s ease;
     padding: 10px;
     overflow: hidden;
@@ -137,7 +139,7 @@ header nav li {
 .slideshow-container {
     position: relative;
     max-width: 80%;
-    height: 400px;
+    height: 600px;
     margin: auto;
     margin-bottom: 20px;
     overflow: hidden;
@@ -257,7 +259,7 @@ header nav li {
 
 .search {
     position: relative;
-    padding: 5px;
+    padding: 7px;
     border-radius: 20px;
     border: 2px solid #000;
     outline: none;
@@ -319,8 +321,9 @@ header nav li {
 }
 
 footer {
-    /* text-align: center; */
-    padding: 50px;
+    width: 80%;
+    margin: auto;
+    padding: 30px;
 }
 
 footer a {
