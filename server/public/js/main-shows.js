@@ -86,10 +86,6 @@ fetch("http://localhost:3000/animeSerie")
         console.log(test);
         const animePosters = document.getElementById('anime');
 
-        // Loop through object properties
-        // Object.keys(myData).forEach((animeKey) => {
-        //     const anime = myData[animeKey];
-
         for (let i = 0; i < myData.length; i++) {
             const anime = myData[i];
             if (i > 0) {
@@ -108,29 +104,7 @@ fetch("http://localhost:3000/animeSerie")
 
 
     });
-// });
 
-
-//   login authenticator
-let config = document.querySelector(".configuration")
-document.addEventListener('DOMContentLoaded', function () {
-    document.querySelector('.login-form').addEventListener('submit', function (event) {
-        event.preventDefault();
-
-        let username = document.querySelector('.login-form input[type="text"]').value;
-        let password = document.querySelector('.login-form input[type="password"]').value;
-
-        if (username === 'Admin' && password === 'Admin') {
-            config.textContent = "Loged in";
-            setInterval(function () {
-                executed = true;
-                off()
-                return;
-            }, 2000)
-            window.open("./Modernize-1.0.0/src/html/index.html");
-        }
-    });
-});
 
 //   Login Display pop up
 

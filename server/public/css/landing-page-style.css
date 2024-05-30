@@ -9,19 +9,25 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --main-color: #ffc119;
+    --bg-color: #242222;;
+    --nav-color: #1f205a;
+}
+
 .start {
     position: relative;
-    background-color: rgb(36, 34, 34);
+    background-color: var(--bg-color);
     color: #fff;
 }
 
 .start a {
     text-decoration: none;
-    color: #ffc119;
+    color: var(--main-color);
 }
 
 .item a:visited {
-    color: #ffc119;
+    color: var(--main-color);
 }
 
 header {
@@ -69,7 +75,7 @@ nav li {
 .profile-container {
     display: flex;
     align-items: center;
-    color: #ffc119;
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -85,7 +91,7 @@ i .gg-menu {
     right: -100%;
     width: 40%;
     height: 100%;
-    background-color: #242222;
+    background-color: var(--bg-color);
     transition: right 0.3s ease;
     padding: 10px;
     overflow: hidden;
@@ -208,7 +214,7 @@ i .gg-menu {
 
 .prev:hover,
 .next:hover {
-    background-color: rgb(36, 34, 34);
+    background-color: var(--bg-color);
     opacity: 0.9;
 }
   
@@ -233,7 +239,7 @@ i .gg-menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #ffc119;
+    background-color: var(--main-color);
     padding: 10px;
     color: black;
 }
@@ -312,7 +318,7 @@ i .gg-menu {
 
 .poster > .name {
     top: 2px;
-    color: #ffc119;
+    color: var(--main-color);
     cursor: pointer;
 }
 
@@ -366,6 +372,8 @@ section {
     -webkit-animation: fadein 0.7s ease-in;
     -moz-animation: fadein 0.7s ease-in;
     animation: fadein 0.7s ease-in;
+    backdrop-filter: blur(10px);
+
 }
 
 .form-box {
@@ -376,9 +384,9 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 3px solid #ffc119;
+    background-color: #2e2b2b;
+    border: 3px solid var(--main-color);
     border-radius: 20px;
-    backdrop-filter: blur(10px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -488,8 +496,9 @@ input:valid ~ label {
 /* login animation */
 @keyframes fadein {
     0%   { opacity: 0; }
+    50% {opacity: 0.5;}
     100% { opacity: 1; }
-}
+}   
 
 /* mobile */
 
