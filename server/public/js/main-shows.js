@@ -88,7 +88,7 @@ fetch("http://localhost:3000/animeSerie")
 
         for (let i = 0; i < myData.length; i++) {
             const anime = myData[i];
-            if (i > 0) {
+            if (i >= 0) {
 
             animePosters.innerHTML += `
             <div class="poster" id="${anime.id}">
