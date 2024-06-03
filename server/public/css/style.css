@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #1f1f1f;
+    padding: 10px;
+}
+
+.episode-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.episode-range {
+    background-color: #2f2f2f;
+    padding: 5px;
+    text-align: center;
+}
+
+.episodes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    margin-top: 10px;
+}
+
+.episode {
+    background-color: #2f2f2f;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.episode.active {
+    background-color: #d87c7c;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.video-player {
+    background-color: #000;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#play-button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.anime-info {
+    background-color: #1f1f1f;
+    padding: 20px;
+}
+
+.anime-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.anime-details p {
+    margin: 10px 0;
+}
+
+.rating {
+    margin-top: 20px;
+}
+
+.rating-score {
+    font-size: 30px;
+}
+
+.rating-vote {
+    margin-top: 10px;
+}
+
+.rating-options button {
+    background-color: #2f2f2f;
+    border: none;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.comments img {
+    width: 50px;
+    height: auto;
+    margin-top: 20px;
+}
