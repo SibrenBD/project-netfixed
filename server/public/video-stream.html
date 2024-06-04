@@ -1,49 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>One Piece</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="episode-list">
-                <div class="episode-range">EPS: 001-100</div>
-                <div class="episodes">
-                    <!-- Episodes will be populated by JavaScript -->
-                </div>
-            </div>
-        </div>
-        <div class="main-content">
-            <div class="video-player">
-                <button id="play-button">▶</button>
-            </div>
-            <div class="anime-info">
-                <div class="anime-title">One Piece</div>
-                <div class="anime-details">
-                    <p>PG-13 | HD | 1107 | 1073 | TV | 24m</p>
-                    <p>Gold Roger was known as the "Pirate King," the strongest and most infamous being to have sailed the Grand Line...</p>
-                    <button>View detail</button>
-                </div>
-                <div class="rating">
-                    <div class="rating-score">9.4</div>
-                    <div class="rating-vote">Vote now</div>
-                    <div class="rating-options">
-                        <button>Boring</button>
-                        <button>Great</button>
-                        <button>Amazing</button>
+    <main>
+        <div class="container">
+            <div class="sidebar">
+                <div class="episode-list">
+                    <div class="episode-range">
+                        <button>Season: 1</button>
+                    </div>
+                    <div class="episodes">
+                        <!-- Episodes will be populated by JavaScript -->
+                        <a href="#" onclick="loadEpisode(1)">
+                            <div class="episode">
+                                <h4>EP 1</h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(2)">
+                            <div class="episode">
+                                <h4>EP 2</h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(3)">
+                            <div class="episode">
+                                <h4>EP 3</h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(4)">
+                            <div class="episode">
+                                <h4>EP 4</h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(5)">
+                            <div class="episode">
+                                <h4>EP 5</h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(6)">
+                            <div class="episode">
+                                <h4>EP 6</h4>
+                            </div>
+                        </a>
                     </div>
                 </div>
-                <div class="comments">
-                    <img src="luffy.png" alt="Luffy">
+            </div>
+            <!-- //embtaku.pro/streaming.php?id=MjE4NTQ2&title=Ore+dake+Level+Up+na+Ken+Episode+1&typesub=SUB -->
+            <div class="main-content">
+                <div class="video-player">
+                    <iframe id="videoIframe"
+                        src="https://www.ad.nl/play/productie/half-mens-half-robot-hoe-ver-willen-we-gaan-447014"
+                        frameborder="0" allowfullscreen="true" marginwidth="0" marginheight="0" height="460"
+                        scrolling="no">
+                    </iframe>
+                </div>
+                <div class="anime-info">
+                    <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2022/07/SoloLeveling_TeaserVisual_Approved.jpg"
+                            alt="Solo-Leveling">
+                    <div class="anime-title">Solo-Leveling</div>
+                    <div class="anime-details">
+                        <p>PG-13 | HD | 24m</p>
+                        <p>discription... Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptas.</p>
+                        <button>View detail</button>
+                    </div>
+                    <div class="rating">
+                        <div class="rating-score">9.4</div>
+                        <div class="rating-vote">Vote now</div>
+                        <div class="rating-options">
+                            <button>Boring</button>
+                            <button>Great</button>
+                            <button>Amazing</button>
+                        </div>
+                    </div>
+                    <div class="comments">
+                        
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <script src="scripts.js"></script>
+    </main>
+    <script>
+        const episodeUrls = [
+            "//embtaku.pro/streaming.php?id=MjE4NTQ2&title=Ore+dake+Level+Up+na+Ken+Episode+1&typesub=SUB",
+
+            // Add more episode if needed
+        ];
+
+        let currentEpisodeIndex = 0;
+
+        // Function to load specific episodes
+        function loadEpisode(episodeNumber) {
+            const iframe = document.getElementById('videoIframe');
+            const episodeInfo = document.getElementById('episodeInfo');
+
+            // Update the iframe src with a new episode
+            currentEpisodeIndex = episodeNumber - 1;
+            iframe.src = episodeUrls[currentEpisodeIndex];
+
+            // Update the episode information
+            episodeInfo.innerText = `Episode: ${episodeNumber}`;
+        }
+
+        // Function to load the next episode
+        function loadNextEpisode() {
+            const iframe = document.getElementById('videoIframe');
+            const episodeInfo = document.getElementById('episodeInfo');
+            currentEpisodeIndex = (currentEpisodeIndex + 1) % episodeUrls.length;
+            iframe.src = episodeUrls[currentEpisodeIndex];
+            const nextEpisodeNumber = currentEpisodeIndex + 1;
+            episodeInfo.innerText = `Episode: ${nextEpisodeNumber}`;
+        }
+
+        // Move to the previous episode in the array
+        function loadPreviousEpisode() {
+            const iframe = document.getElementById('videoIframe');
+            const episodeInfo = document.getElementById('episodeInfo');
+            currentEpisodeIndex = (currentEpisodeIndex - 1 + episodeUrls.length) % episodeUrls.length;
+            iframe.src = episodeUrls[currentEpisodeIndex];
+
+            // Update the episode information
+            const previousEpisodeNumber = currentEpisodeIndex + 1;
+            episodeInfo.innerText = `Episode: ${previousEpisodeNumber}`;
+        }
+    </script>
 </body>
+
 </html>
 
 </html>

@@ -50,7 +50,8 @@
                         <div class="video">
                             <iframe id="videoIframe"
                                 src="//embtaku.pro/streaming.php?id=MjE4NTQ2&title=Ore+dake+Level+Up+na+Ken+Episode+1&typesub=SUB"
-                                frameborder="0" allowfullscreen="true" marginwidth="0" marginheight="0" height="460" scrolling="no"></iframe>
+                                frameborder="0" allowfullscreen="true" marginwidth="0" marginheight="0" height="460"
+                                scrolling="no"></iframe>
                         </div>
 
                         <div class="btn">
@@ -122,58 +123,58 @@
                             </div>
                         </a>
 
+                    </div>
                 </div>
-            </div>
         </main>
         <footer>
             <p><a href="">About us</a> | <a href=""> Contact us</a> | <a href="">Privacy</a> | <a
                     href="landing-page.html">Netfixed</a></p>
         </footer>
-        <script>
-            const episodeUrls = [
-                "//embtaku.pro/streaming.php?id=MjE4NTQ2&title=Ore+dake+Level+Up+na+Ken+Episode+1&typesub=SUB",
-                
-                // Add more episode if needed
-            ];
-
-            let currentEpisodeIndex = 0;
-
-            // Function to load specific episodes
-            function loadEpisode(episodeNumber) {
-                const iframe = document.getElementById('videoIframe');
-                const episodeInfo = document.getElementById('episodeInfo');
-
-                // Update the iframe src with a new episode
-                currentEpisodeIndex = episodeNumber - 1;
-                iframe.src = episodeUrls[currentEpisodeIndex];
-
-                // Update the episode information
-                episodeInfo.innerText = `Episode: ${episodeNumber}`;
-            }
-
-            // Function to load the next episode
-            function loadNextEpisode() {
-                const iframe = document.getElementById('videoIframe');
-                const episodeInfo = document.getElementById('episodeInfo');
-                currentEpisodeIndex = (currentEpisodeIndex + 1) % episodeUrls.length;
-                iframe.src = episodeUrls[currentEpisodeIndex];
-                const nextEpisodeNumber = currentEpisodeIndex + 1;
-                episodeInfo.innerText = `Episode: ${nextEpisodeNumber}`;
-            }
-
-            // Move to the previous episode in the array
-            function loadPreviousEpisode() {
-                const iframe = document.getElementById('videoIframe');
-                const episodeInfo = document.getElementById('episodeInfo');
-                currentEpisodeIndex = (currentEpisodeIndex - 1 + episodeUrls.length) % episodeUrls.length;
-                iframe.src = episodeUrls[currentEpisodeIndex];
-
-                // Update the episode information
-                const previousEpisodeNumber = currentEpisodeIndex + 1;
-                episodeInfo.innerText = `Episode: ${previousEpisodeNumber}`;
-            }
-        </script>
     </div>
+    <script>
+        const episodeUrls = [
+            "//embtaku.pro/streaming.php?id=MjE4NTQ2&title=Ore+dake+Level+Up+na+Ken+Episode+1&typesub=SUB",
+
+            // Add more episode if needed
+        ];
+
+        let currentEpisodeIndex = 0;
+
+        // Function to load specific episodes
+        function loadEpisode(episodeNumber) {
+            const iframe = document.getElementById('videoIframe');
+            const episodeInfo = document.getElementById('episodeInfo');
+
+            // Update the iframe src with a new episode
+            currentEpisodeIndex = episodeNumber - 1;
+            iframe.src = episodeUrls[currentEpisodeIndex];
+
+            // Update the episode information
+            episodeInfo.innerText = `Episode: ${episodeNumber}`;
+        }
+
+        // Function to load the next episode
+        function loadNextEpisode() {
+            const iframe = document.getElementById('videoIframe');
+            const episodeInfo = document.getElementById('episodeInfo');
+            currentEpisodeIndex = (currentEpisodeIndex + 1) % episodeUrls.length;
+            iframe.src = episodeUrls[currentEpisodeIndex];
+            const nextEpisodeNumber = currentEpisodeIndex + 1;
+            episodeInfo.innerText = `Episode: ${nextEpisodeNumber}`;
+        }
+
+        // Move to the previous episode in the array
+        function loadPreviousEpisode() {
+            const iframe = document.getElementById('videoIframe');
+            const episodeInfo = document.getElementById('episodeInfo');
+            currentEpisodeIndex = (currentEpisodeIndex - 1 + episodeUrls.length) % episodeUrls.length;
+            iframe.src = episodeUrls[currentEpisodeIndex];
+
+            // Update the episode information
+            const previousEpisodeNumber = currentEpisodeIndex + 1;
+            episodeInfo.innerText = `Episode: ${previousEpisodeNumber}`;
+        }
+    </script>
 </body>
 
 </html>
