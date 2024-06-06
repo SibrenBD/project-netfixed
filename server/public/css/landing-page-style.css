@@ -90,7 +90,7 @@ nav li {
 }
 
 /* Implement a better Hover  */
-.profile-container {
+.side-container {
     display: flex;
     align-items: center;
     color: var(--main-color);
@@ -133,7 +133,7 @@ nav li {
     font-size: 24px;
 }
 
-.profile-container  img {
+.side-container  img {
     border-radius: 50%;
     max-width: 60px;
     height: 100%;
@@ -142,14 +142,14 @@ nav li {
     cursor: pointer; 
 }
 
-.profile-container > div {
+.side-container > div {
     display: flex;
     align-self: center;
     justify-self: space-between;
     margin: 15px;
 }
 
-.profile-container > i {
+.side-container > i {
     font-size: large;
     font-weight: 600;
 }
