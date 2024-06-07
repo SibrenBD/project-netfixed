@@ -170,6 +170,7 @@ main {
     margin: auto;
     margin-bottom: 20px;
     overflow: hidden;
+    background-color: #000;
 }
   
 .slides {
@@ -200,12 +201,20 @@ main {
     width: 100%;
     height: 100%;
     opacity: 0.6;
+    -webkit-animation: fadeinout 4s linear forwards;
+    animation: fadeinout 4s linear forwards;
 }
 
-.slide img:hover {
-    opacity: 1;
-}
+@-webkit-keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
   
+  @keyframes fadeinout {
+    0%,100% { opacity: 0; }
+    50% { opacity: 1; }
+  }
+
 .front {
     position: absolute;
     width: 30%;
