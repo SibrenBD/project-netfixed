@@ -1,12 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #ffc119;
+    --bg-color: #242222;
+    --nav-color: #1a1a1a;
+    --text-color: #fff;
+    --link-color: #ff8c00; /* or #ffa07a, or #66d9ef */
+    --close-button-color: #2f4f7f; /* dark blue */
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #141414;
     color: #fff;
-    margin: 0;
-    padding: 0;
 }
 
-.container {
+.video-container {
     display: flex;
 }
 
@@ -16,6 +30,7 @@ body {
     padding: 10px;
     height: 90vh;
     margin-top: 20px;
+    margin-left: 20px;
     margin-bottom: auto;
 }
 
@@ -82,13 +97,17 @@ body {
 .video-player {
     position: relative;
     background-color: #000;
-    height: 400px;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    width: 100%;
+    height: 460px;
     align-items: center;
-    margin-bottom: 20px;
+    
 }
 
 .video-player > iframe {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: none;
@@ -97,6 +116,7 @@ body {
 
 .anime-info {
     background-color: #1f1f1f;
+    margin-top: 10px;
     padding: 20px;
 }
 
@@ -113,7 +133,12 @@ body {
 }
 
 .anime-details p {
+    max-width: 50%;
     margin: 10px 0;
+}
+
+.anime-details button {
+    padding: 2px;
 }
 
 .rating {
@@ -134,10 +159,49 @@ body {
     padding: 10px;
     margin: 5px;
     cursor: pointer;
+    transition: all 0.3s linear 0s;
+}
+
+.rating-options button:hover {
+    background-color: #ffc119;
+    color: #fff;
+    animation: flash 0.4s;
+}
+
+.rating-options:not(:hover) {
+    color: #000;
+    animation: flash 2s;
 }
 
 .comments img {
     width: 50px;
     height: auto;
     margin-top: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    
+    .video-main {
+        width: 100%;
+        order: 2;
+    }
+
+    .main-content {
+        order: 1;
+    }
+
+    .episodes {
+        grid-template-columns: repeat(auto-fill, minmax(30px, 1fr));
+    }
+
+    .video-player {
+        padding-bottom: 75%; /* 4:3 aspect ratio */
+    }
+}
+
+@media (max-width: 480px) {
+    .video-player {
+        padding-bottom: 100%; /* 1:1 aspect ratio */
+    }
 }
