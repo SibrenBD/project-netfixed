@@ -1,42 +1,64 @@
 // recommandations_Container
 let slideIndex = 0;
-showSlides();
+showSlides(slideIndex);
 
-function showSlides() {
-  let i;
-  let slides = document.getElementsByClassName("slide");
-  let dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 
-  7000);
+function showSlides(n) {
+    let slides = document.getElementsByClassName("slide");
+    
+    if (n >= slides.length) {
+        slideIndex = 0;
+    } else if (n < 0) {
+        slideIndex = slides.length - 1;
+    } else {
+        slideIndex = n;
+    }
+    
+    // Hide all slides
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    
+    // Show the current slide
+    slides[slideIndex].style.display = "block";
 }
+
+// Function to change slides
+function plusSlides(n) {
+    showSlides(slideIndex + n);
+}
+
+// Add event listeners to buttons
+document.querySelector(".prev").addEventListener("click", function() {
+    plusSlides(-1);
+});
+
+document.querySelector(".next").addEventListener("click", function() {
+    plusSlides(1);
+});
+
+// Automatically change slides every 12 seconds
+setInterval(function() {
+    plusSlides(1);
+}, 12000);
+
 
 // menu
 document.addEventListener('DOMContentLoaded', function () {
     const menuIcon = document.querySelector('.gg-menu');
     const overlayMenu = document.querySelector('.overlay-menu');
-  
+
     // Toggle overlay menu when menu icon is clicked
     menuIcon.addEventListener('click', function () {
-      overlayMenu.classList.toggle('open');
+        overlayMenu.classList.toggle('open');
     });
-  
+
     // Close overlay menu when clicked outside of it
     overlayMenu.addEventListener('click', function (event) {
-      if (!event.target.closest('ul')) {
-        overlayMenu.classList.remove('open');
-      }
+        if (!event.target.closest('ul')) {
+            overlayMenu.classList.remove('open');
+        }
     });
-  });
+});
 
 // searchInput
 function searchItems() {
@@ -78,7 +100,7 @@ fetch("http://localhost:3000/animeSerie")
             const anime = myData[i];
             if (i >= 0) {
 
-            animePosters.innerHTML += `
+                animePosters.innerHTML += `
             <div class="poster" id="${anime.id}">
                 <a href="${anime.page}">
                     <img src="${anime.img}">

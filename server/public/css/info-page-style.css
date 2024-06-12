@@ -129,15 +129,12 @@ footer a {
     width: 100%;
 }
 
-/* .discription h3, p {
-    position: relative;
-    left: 20px;
-} */
-
 .discription button {
-    font-size: 16px;
-    background-color: #ffc119;
-    padding: 10px;
+    background-color: var(--main-color);
+    color: var(--nav-color);
+    padding: 6px 10px;
+    font-size: large;
+    border-radius: 10px;
     cursor: pointer;
 }
 

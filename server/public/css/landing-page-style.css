@@ -10,9 +10,8 @@ html {
 }
 
 body {
-    position: relative;
-    background-color: rgb(36, 34, 34);
-    color: #fff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
 }
 
 :root {
@@ -24,20 +23,12 @@ body {
     --close-button-color: #2f4f7f; /* dark blue */
 }
 
-body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-}
-
-.start a {
+a, a:visited {
     text-decoration: none;
     color: var(--main-color);
 }
 
-.item a:visited {
-    color: var(--main-color);
-}
-
+/* start header */
 header {
     position: absolute;
     top: 0;
@@ -93,7 +84,6 @@ nav li {
     display: inline-block;
 }
 
-/* Implement a better Hover  */
 .side-container {
     display: flex;
     align-items: center;
@@ -101,43 +91,7 @@ nav li {
     cursor: pointer;
 }
 
-/* Overlay menu styles */
-.overlay-menu {
-    position: fixed;
-    top: -100%;
-    width: 100%;
-    height: 100px;
-    background-color: var(--bg-color);
-    transition: top 0.3s ease;
-    padding: 10px;
-    overflow: hidden;
-    z-index: 2;
-}
-  
-.overlay-menu.open {
-    top: 0;
-}
-  
-.overlay-menu ul {
-    /* position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); */
-    list-style: none;
-    padding: 0;
-}
-  
-.overlay-menu ul li {
-    margin-bottom: 20px;
-}
-  
-.overlay-menu ul li a {
-    /* color: white; */
-    text-decoration: none;
-    font-size: 24px;
-}
-
-.side-container  img {
+.side-container img {
     border-radius: 50%;
     max-width: 60px;
     height: 100%;
@@ -158,19 +112,46 @@ nav li {
     font-weight: 600;
 }
 
+/* Overlay menu styles */
+.overlay-menu {
+    position: fixed;
+    top: -100%;
+    width: 100%;
+    height: 100px;
+    background-color: var(--bg-color);
+    transition: top 0.3s ease;
+    padding: 10px;
+    overflow: hidden;
+    z-index: 2;
+}
+  
+.overlay-menu.open {
+    top: 0;
+}
+  
+.overlay-menu ul {
+    list-style: none;
+    padding: 0;
+}
+  
+.overlay-menu ul li {
+    margin-bottom: 20px;
+}
+  
+.overlay-menu ul li a {
+    text-decoration: none;
+    font-size: 24px;
+} /* end header */
+
 main {
     position: relative;
-    /* top: 75px; */
 }
 
+/* start slideshow */
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: 90vh;
-    margin: auto;
-    margin-bottom: 20px;
     overflow: hidden;
-    background-color: #000;
 }
   
 .slides {
@@ -196,54 +177,62 @@ main {
 }
   
 .slide img {
-    background: cover;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-size: cover;
     aspect-ratio: auto 3/4;
     width: 100%;
-    height: 100%;
-    opacity: 0.6;
-    -webkit-animation: fadeinout 7s linear forwards;
-    animation: fadeinout 7s linear forwards;
+    height: 100vh;
+    -webkit-animation: fadeinout 2.5s linear forwards;
+    animation: fadeinout 2.5s linear forwards;
+}
+
+.front button {
+    background-color: var(--main-color);
+    color: var(--nav-color);
+    padding: 6px 10px;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 @-webkit-keyframes fadeinout {
-    0%,100% { opacity: 0; }
-    50% { opacity: 1; }
+    0% { opacity: 0;}
+    25% { opacity: 0.25;}
+    50% { opacity: 0.5; }
+    75% { opacity: 0.75;}
+    100% { opacity: 1;}
 }
   
 @keyframes fadeinout {
-    0%,100% { opacity: 0; }
-    50% { opacity: 1; }
-}
-
-.dot {
-    position: relative;
-    top: -5px;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: var(--main-color);
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-
-.active {
-    background-color: var(--link-color);
+    0% { opacity: 0;}
+    25% { opacity: 0.25;}
+    50% { opacity: 0.5; }
+    75% { opacity: 0.75;}
+    100% { opacity: 1;}
 }
 
 .front {
     position: absolute;
-    width: 30%;
-    bottom: 0%;
+    width: 40%;
+    bottom: 5%;
     left: 4%;
     z-index: 1;
     padding: 10px;
 }
 
+.front h3 {
+    font-size: x-large;
+    color: var(--main-color);
+}
+
 .front p {
     line-break: auto;
-    min-height: 7em;
-    overflow: hidden;
+    max-height: 7em;
 }
   
 .caption {
@@ -255,18 +244,23 @@ main {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    padding: 16px;
-    cursor: pointer;
-    color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 20px;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    border: none;
+    opacity: 0.6;
     font-weight: bold;
     font-size: 18px;
+    border-radius: 15px;
     z-index: 1000;
+    cursor: pointer;
 }
 
 .prev:hover,
 .next:hover {
-    background-color: var(--bg-color);
-    opacity: 0.9;
+    opacity: 1;
 }
   
 .prev {
@@ -275,9 +269,9 @@ main {
   
 .next {
     right: 0;
-}
+}/* end slideshow */
   
-
+/* start of release-container */
 .container {
     border: 1px solid var(--text-color);
     height: 100%;
@@ -291,6 +285,7 @@ main {
     align-items: center;
     justify-content: space-between;
     background-color: var(--main-color);
+    margin-top: 10px;
     padding: 10px;
     color: black;
 }
@@ -314,6 +309,8 @@ main {
     color: var(--text-color);
 }
 
+
+/* searsh input and icon */
 .search {
     position: relative;
     padding: 7px;
@@ -328,8 +325,9 @@ main {
     position: relative;
     right: 30px;
     color: black;
-}
+} /* end of release-container */
 
+/* anime posters */
 .items {
     display: flex;
     flex-wrap: wrap;
@@ -358,10 +356,9 @@ main {
     width: 100%;
     max-width: 100%;
     height: 100%;
-    cursor: pointer;
+    cursor: default;
 }
 
-/* change margin on or off  */
 .poster p {
     position: relative;
     font-size: small;
@@ -382,6 +379,7 @@ footer {
     width: 80%;
     margin: auto;
     padding: 30px;
+    text-align: center;
 }
 
 footer a {
@@ -589,5 +587,16 @@ h2 {
     .gg-menu {
         display: block;
     }
+
+    .front {
+        font-size: large;
+        min-width: 50%;
+    }
+
+    .front p {
+        
+        overflow-y: scroll;
+    }
+    
 }
 
