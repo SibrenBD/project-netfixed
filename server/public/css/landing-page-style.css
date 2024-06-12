@@ -166,7 +166,7 @@ main {
 .slideshow-container {
     position: relative;
     max-width: 100%;
-    height: 800px;
+    height: 90vh;
     margin: auto;
     margin-bottom: 20px;
     overflow: hidden;
@@ -201,19 +201,35 @@ main {
     width: 100%;
     height: 100%;
     opacity: 0.6;
-    -webkit-animation: fadeinout 4s linear forwards;
-    animation: fadeinout 4s linear forwards;
+    -webkit-animation: fadeinout 7s linear forwards;
+    animation: fadeinout 7s linear forwards;
 }
 
 @-webkit-keyframes fadeinout {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
-  }
+}
   
-  @keyframes fadeinout {
+@keyframes fadeinout {
     0%,100% { opacity: 0; }
     50% { opacity: 1; }
-  }
+}
+
+.dot {
+    position: relative;
+    top: -5px;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: var(--main-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active {
+    background-color: var(--link-color);
+}
 
 .front {
     position: absolute;
@@ -541,7 +557,13 @@ h2 {
     0%   { opacity: 0; }
     50% {opacity: 0.5;}
     100% { opacity: 1; }
-}   
+}
+
+@keyframes fadeout {
+    0%   { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 0; }
+}
 
 /* mobile */
 

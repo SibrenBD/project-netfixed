@@ -102,16 +102,16 @@
 
                                 <!-- Register Form -->
                                 <div class="register-form" style="display:none;">
-                                        <div class="indicator">
-                                            <h2>Register</h2>
-                                        </div>
-                                        <div class="close-btn">
-                                            <svg onclick="off()" xmlns="http://www.w3.org/2000/svg" width="16"
-                                                height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
-                                            </svg>
-                                        </div>
+                                    <div class="indicator">
+                                        <h2>Register</h2>
+                                    </div>
+                                    <div class="close-btn">
+                                        <svg onclick="off()" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+                                            <path
+                                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                    </div>
                                     <div class="inputbox">
                                         <ion-icon name="person-outline"></ion-icon>
                                         <input type="text" name="username" class="register-username" required>
@@ -163,8 +163,7 @@
                 <div class="slides">
                     <div class="slide">
                         <a href="./info-pages/sao-info-page.html">
-                            <img src="https://images3.alphacoders.com/573/573247.png"
-                                alt="poster">
+                            <img src="https://images3.alphacoders.com/573/573247.png" alt="poster">
                         </a>
                         <div class="front">
                             <h3>Sword art online</h3> <br>
@@ -176,41 +175,46 @@
                     </div>
                     <!-- Add more slides as needed -->
                     <div class="slide">
-                        <a href="./info-pages/Solo Leveling.html">
-                            <img src="https://images5.alphacoders.com/133/1330510.jpeg"
-                                alt="">
-                        </a>
                         <div class="front">
                             <h3>Solo-Leveling</h3> <br>
                             <p>In a world of gifted hunters and monsters, a weak hunter Sung Jinwoo gains extraordinary
                                 powers through a mysterious program, leading him to become one of the strongest hunters
                                 and conquering even the strongest dungeons.</p>
                         </div>
+                        <div>
+                            <a href="./info-pages/Solo Leveling.html">
+                                <img src="https://images5.alphacoders.com/133/1330510.jpeg" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
-
                 <!-- Next and previous buttons -->
                 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                 <a class="next" onclick="plusSlides(1)">&#10095;</a>
             </div>
+            <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+              </div>
 
             <!-- <div class="container"> -->
-                <div class="release-container">
-                    <div class="release">
-                        <h3>Populair</h3>
-                        &#124;<button class="dub">DUB</button>
-                        &#124;<button class="sub"> SUB</button>
-                    </div>
-
-                    <div class="search-container">
-                        <input placeholder="search" name="keyword" id="keyword" type="text" class="search"
-                            autocomplete="off" oninput="searchItems()" maxlength="16"><i class="fa fa-search"></i>
-                    </div>
+            <div class="release-container">
+                <div class="release">
+                    <h3>Populair</h3>
+                    &#124;<button class="dub">DUB</button>
+                    &#124;<button class="sub"> SUB</button>
                 </div>
 
-                <div class="items" id="anime">
-
+                <div class="search-container">
+                    <input placeholder="search" name="keyword" id="keyword" type="text" class="search"
+                        autocomplete="off" oninput="searchItems()" maxlength="16"><i class="fa fa-search"></i>
                 </div>
+            </div>
+
+            <div class="items" id="anime">
+
+            </div>
             <!-- </div> -->
 
         </main>

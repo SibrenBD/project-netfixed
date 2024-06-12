@@ -51,7 +51,7 @@ async function fetchUsers() {
         const collection = database.collection('users');
         //we fetch the users from our database
         const users = await collection.find().toArray();
-        //finally we return the cheeses
+        //finally we return the users
         return users;
     } finally {
         // ensures that the client will close when you finish/error
@@ -110,9 +110,10 @@ const registerValidation = {
 const registerValidation2 = {
     body: Joi.object({
         username: Joi.string()
+            .regex(/[a-zA-Z0-9]{5,30}/)
             .required(),
         password: Joi.string()
-            .regex(/[a-zA-Z0-9]{3,30}/)
+            .regex(/[a-zA-Z0-9]{5,30}/)
             .required(),
     }),
 };

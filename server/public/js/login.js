@@ -18,8 +18,8 @@ loginButton.addEventListener('click', function () {
         const content = await rawResponse.json();
         console.log(content);
         if (content.success) {
-            alert("you've logged in :)");
-            window.open("http://localhost:3000/#");
+            alert(username, "welcome :)");
+            window.open("http://localhost:3000/users");
         } else if(content.success == false){
             passwordField.classList.add('red');
             alert('Logging in failed');
