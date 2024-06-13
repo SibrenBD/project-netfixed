@@ -27,7 +27,6 @@ function plusSlides(n) {
     showSlides(slideIndex + n);
 }
 
-// Add event listeners to buttons
 document.querySelector(".prev").addEventListener("click", function() {
     plusSlides(-1);
 });
@@ -36,10 +35,13 @@ document.querySelector(".next").addEventListener("click", function() {
     plusSlides(1);
 });
 
-// Automatically change slides every 12 seconds
-setInterval(function() {
+function slideStart () {
+    // console.log("slide", slideIndex)
     plusSlides(1);
-}, 12000);
+}
+
+// Automatically change slides every 12 seconds
+setInterval(slideStart, 12000);
 
 
 // menu
@@ -136,3 +138,14 @@ function switchToLogin() {
     document.querySelector('.register-form').style.display = 'none';
     document.querySelector('.login-form').style.display = 'block';
 }
+
+// scroll header
+
+document.addEventListener("scroll", function() {
+    const header = document.querySelector("header");
+    if(window.scrollY > 50) {
+        header.classList.add("active")
+    } else {
+        header.classList.remove("active")
+    }
+}) 
