@@ -36,7 +36,7 @@ header {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  min-height: 75px;
+  min-height: 65px;
   max-height: 92px;
   background-color: transparent;
   font-family: sans-serif;
@@ -102,7 +102,7 @@ nav li {
 .side-container > i {
   font-size: large;
   font-weight: 600;
-}
+} /* end header */
 
 .avatar-list {
   display: flex;
@@ -113,13 +113,13 @@ nav li {
   box-sizing: border-box;
   position: relative;
   border-radius: 50%;
-  padding: 4px;
+  padding: 3px;
   box-shadow: inset 0 0 0 2px #4d4f6e;
 }
 
 .avatar-large {
-  width: 60px;
-  height: 60px;
+  width: 55px;
+  height: 55px;
   margin: auto;
 }
 
@@ -135,9 +135,9 @@ nav li {
 }
 
 .avatar-large .avatar-frame {
-  top: -10%;
-  left: -10%;
-  max-width: 120%;
+  top: -5%;
+  left: -5%;
+  max-width: 110%;
 }
 
 .avatar-x-large .avatar-frame {
@@ -166,37 +166,6 @@ nav li {
     transform: rotate(360deg);
   }
 }
-
-/* Overlay menu styles */
-.overlay-menu {
-  position: fixed;
-  top: -100%;
-  width: 100%;
-  height: 100px;
-  background-color: var(--bg-color);
-  transition: top 0.3s ease;
-  padding: 10px;
-  overflow: hidden;
-  z-index: 2;
-}
-
-.overlay-menu.open {
-  top: 0;
-}
-
-.overlay-menu ul {
-  list-style: none;
-  padding: 0;
-}
-
-.overlay-menu ul li {
-  margin-bottom: 20px;
-}
-
-.overlay-menu ul li a {
-  text-decoration: none;
-  font-size: 24px;
-} /* end header */
 
 main {
   position: relative;
@@ -416,6 +385,7 @@ main {
   height: 300px;
   border: 2px solid yellow;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .poster:hover {
@@ -427,7 +397,6 @@ main {
   width: 100%;
   max-width: 100%;
   height: 100%;
-  cursor: default;
 }
 
 .poster p {
@@ -681,5 +650,9 @@ h2 {
 
   .front p {
     overflow-y: scroll;
+  }
+
+  .slide img {
+    height: 70vh;
   }
 }
