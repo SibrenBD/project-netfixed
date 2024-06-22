@@ -3,8 +3,8 @@ const usernameField = document.querySelector(".login-username");
 const passwordField = document.querySelector('.login-password');
 
 loginButton.addEventListener('click', function () {
-    usernameField.style.borderBottom = 'none';
-    passwordField.style.borderBottom = 'none';
+    usernameField.style.borderBottom = '2px solid var(--text-color)';
+    passwordField.style.borderBottom = '2px solid var(--text-color)';
     //post fetch to webservice 
     (async () => {
         const rawResponse = await fetch('/authenticate', {
@@ -21,8 +21,9 @@ loginButton.addEventListener('click', function () {
             alert(username, "welcome :)");
             window.open("http://localhost:3000/users");
         } else if(content.success == false){
-            passwordField.classList.add('red');
             alert('Logging in failed');
+            usernameField.style.borderBottom = '2px solid red'
+            passwordField.style.borderBottom = '2px solid red'
         }
         
         else {

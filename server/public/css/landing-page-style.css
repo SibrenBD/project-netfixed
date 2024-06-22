@@ -355,18 +355,18 @@ main {
 /* searsh input and icon */
 .search {
   position: relative;
-  padding: 7px;
-  border-radius: 20px;
+  padding: 6px;
+  border-radius: 5px;
   border: 2px solid #000;
   outline: none;
   color: black;
   cursor: text;
 }
 
-.fa-search {
-  position: relative;
-  right: 30px;
-  color: black;
+.icon {
+  background: url("https://static.thenounproject.com/png/101791-200.png") no-repeat right;
+  background-color: var(--text-color);
+  background-size: 20px;
 } /* end of release-container */
 
 /* anime posters */
@@ -516,9 +516,8 @@ h2 {
 
 .inputbox {
   position: relative;
-  margin: 30px 0;
+  margin: 60px 0;
   width: 310px;
-  border-bottom: 2px solid var(--text-color);
 }
 
 .inputbox label {
@@ -536,14 +535,11 @@ h2 {
   height: 50px;
   background: transparent;
   border: none;
+  border-bottom: 2px solid var(--text-color);
   outline: none;
   font-size: 1em;
   padding: 0 35px 0 5px;
   color: var(--text-color);
-}
-
-#password {
-  color: black;
 }
 
 .login-configuration,

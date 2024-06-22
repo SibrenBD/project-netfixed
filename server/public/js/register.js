@@ -11,9 +11,9 @@ function switchToLogin() {
 }
 
 registerButton.addEventListener('click', function () {
-    registerUsernameField.style.borderBottom = 'none';
-    registerEmailField.style.borderBottom = 'none';
-    registerPasswordField.style.border = 'none';
+    registerUsernameField.style.borderBottom = '2px solid var(--text-color)';
+    registerEmailField.style.borderBottom = '2px solid var(--text-color)';
+    registerPasswordField.style.borderBottom = '2px solid var(--text-color)';
     //post fetch to webservice 
     (async () => {
         const rawResponse = await fetch('/register', {
