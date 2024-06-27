@@ -7,6 +7,7 @@ import dotenv from 'dotenv';
 import { MongoClient, ServerApiVersion } from 'mongodb';
 import fs from 'fs';
 import cors from 'cors';
+import { log } from 'console';
 
 dotenv.config();
 
@@ -31,12 +32,102 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../public', 'index.html'));
 });
 
-app.get('/animes', (req, res) => {
-    fs.readFile('data/anime.json', 'utf8', (err, data) => {
-        res.setHeader('Content-Type', 'application/json;charset=UTF-8');
-        res.send(data);
-    });
+app.get('/video-page/:animeId', (req, res) => {
+    const animeId = req.params.animeId
+    fetch('http://localhost:3000/animeSerie')
+.then(myData => myData.text())
+.then(textData => loadVodPage(textData));
+
+function loadVodPage(data) {
+    console.log(data.animeId);
+    res.setHeader('Content-Type', 'text/html');
+    res.send(
+        `
+        <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>${data.animeId.dubtitle}</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main class="container">
+        <div class="video-container">
+            <div class="sidebar">
+                <div class="episode-list">
+                    <div class="episode-range">
+                        <button>Season: 1</button>
+                    </div>
+                    <div class="episodes">
+                        <!-- Episodes will be populated by JavaScript -->
+                        <a href="" onclick="loadEpisode(1)">
+                            <div class="episode">
+                                <div class="episodeNumber">1</div>
+                                <div class="episodeTitle"> Lorem ipsum dolor sit amet</div>
+                            </div>
+                        </a>
+                        <a href="#episode2" onclick="loadEpisode(2)">
+                            <div class="episode">
+                                <h4>2 </h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(3)">
+                            <div class="episode">
+                                <h4>3</h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(4)">
+                            <div class="episode">
+                                <h4>4 </h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(5)">
+                            <div class="episode">
+                                <h4>5 </h4>
+                            </div>
+                        </a>
+                        <a href="#" onclick="loadEpisode(6)">
+                            <div class="episode">
+                                <h4>6</h4>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="video-player">
+                    <iframe id="videoIframe"
+                        src="//embtaku.pro/streaming.php?id=MjE4NTQ2&title=Ore+dake+Level+Up+na+Ken+Episode+1&typesub=SUB"
+                        frameborder="0" allowfullscreen="true" marginwidth="0" marginheight="0" scrolling="no" height="460"></iframe>
+                </div>
+                
+                <div class="anime-info">
+                    <img src="https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2022/07/SoloLeveling_TeaserVisual_Approved.jpg"
+                        alt="Solo-Leveling">
+                    <div class="anime-title">Solo-Leveling</div>
+                    <div class="anime-details">
+                        <p>PG-13 | HD | 24m</p>
+                        <p>discription... Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, voluptas.</p>
+                        <button>View detail</button>
+                    </div>
+                    <div class="comments">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
+        `
+    );
+}
+
 });
+
 
 //this function returns all data from the collection in Mongodb
 

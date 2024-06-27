@@ -95,7 +95,7 @@ fetch("http://localhost:3000/animeSerie")
     .then((response) => response.json())
     .then((myData) => {
         const test = myData[0]
-        console.log(test);
+        console.log(myData[4]);
         const animePosters = document.getElementById('anime');
 
         for (let i = 0; i < myData.length; i++) {
@@ -113,8 +113,6 @@ fetch("http://localhost:3000/animeSerie")
             }
 
         }
-
-
     });
 
 
