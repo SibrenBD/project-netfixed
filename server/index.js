@@ -5,9 +5,9 @@ import bodyParser from 'body-parser';
 import { validate, ValidationError, Joi } from 'express-validation';
 import dotenv from 'dotenv';
 import { MongoClient, ServerApiVersion } from 'mongodb';
-import fs from 'fs';
+const fetch = require('node-fetch');
 import cors from 'cors';
-import { log } from 'console';
+
 
 dotenv.config();
 
@@ -49,8 +49,8 @@ function loadVodPage(data) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>${data.animeId.dubtitle}</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>${data.animeId}</title>
+    <link rel="stylesheet" href="/css/style.css" type=text/css>
 </head>
 
 <body>
