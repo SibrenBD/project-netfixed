@@ -5,7 +5,7 @@ import bodyParser from 'body-parser';
 import { validate, ValidationError, Joi } from 'express-validation';
 import dotenv from 'dotenv';
 import { MongoClient, ServerApiVersion } from 'mongodb';
-const fetch = require('node-fetch');
+// const fetch = require('node-fetch');
 import cors from 'cors';
 
 
